@@ -1,0 +1,54 @@
+
+// Only variables can be placed here,
+// and other files such as themes cannot be introduced,
+// otherwise it will affect the packaging speed.
+
+/* theme color */
+$--color-primary: #0c969b;
+$--color-success: #52C41A;
+$--color-warning: #FAAD14;
+$--color-danger: #FA5555;
+$--color-info: #909399;
+
+
+// 按需导入，重写覆盖自己所需样式
+@forward "element-plus/theme-chalk/src/common/var.scss" with (
+  $colors: (
+    "primary": (
+      "base": $--color-primary,
+    ),
+    "success": (
+      "base":  $--color-success,
+    ),
+    "warning": (
+      "base":  $--color-warning,
+    ),
+    "danger": (
+      "base":  $--color-danger,
+    ),
+    "info": (
+      "base":  $--color-info,
+    ),
+    
+  ),
+  $text-color: (
+    'primary': red,
+    'regular': #606266,
+    'secondary': #909399,
+    'placeholder': #c0c4cc,
+  ),
+  $border-radius: (
+    'base': 4px,
+    'small': 2px,
+    'round': 20px,
+    'circle': 100%,
+  ),
+);
+
+:root {
+  --el-color-warning: #FAAD14;
+}
+
+// :export {
+//   colorPrimary: $--color-primary;
+// }
