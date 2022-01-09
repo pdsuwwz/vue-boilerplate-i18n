@@ -7,7 +7,7 @@
     >
       <img
         class="side-logo-img"
-        src="@/assets/images/pinia.svg"
+        src="@/assets/images/i18n.svg"
         alt="商标"
       >
       <h1 class="side-logo-title">

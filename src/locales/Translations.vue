@@ -21,6 +21,7 @@
           v-for="(localeItem, index) in localesList"
           :key="index"
           :command="localeItem"
+          :disabled="currentLocale === localeItem.localeCode"
         >
           {{ localeItem.localeName }}
         </el-dropdown-item>
@@ -29,7 +30,7 @@
   </el-dropdown>
 </template>
 <script lang="ts">
-import { defineComponent, nextTick, ref } from 'vue'
+import { computed, defineComponent, nextTick, ref } from 'vue'
 import { localesMapping } from '@/locales/config'
 import { useUserAccountStore } from '@/modules/UserAccount/store'
 
@@ -56,6 +57,8 @@ export default defineComponent({
     const router = useRouter()
     const userAccountStore = useUserAccountStore()
     const localesList = ref(localesMapping)
+    const currentLocale = computed(() => userAccountStore.locale)
+
     const handleChange = (targetLocaleItem) => {
       setTimeout(() => {
         const { localeCode } = targetLocaleItem
@@ -68,8 +71,10 @@ export default defineComponent({
         changeLocale(localeCode)
       })
     }
+
     return {
       localesList,
+      currentLocale,
       handleChange
     }
   }

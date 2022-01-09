@@ -25,7 +25,6 @@ export async function changeLocale(locale) {
     return locale
   }
 
-  console.log('locale', locale)
   const langModule = await import(`./lang/${locale}.ts`)
   if (!langModule) return
 
@@ -40,7 +39,6 @@ export const useLocale = () => {
   const getLocale = computed(() => store.locale)
 
   return computed((): any => {
-    console.log('i18n.global.getLocaleMessage(getLocale.value)', i18n.global.getLocaleMessage(getLocale.value))
     return i18n.global.getLocaleMessage(getLocale.value)
   })
 }

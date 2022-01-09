@@ -25,14 +25,13 @@ const routes = [
     path: `/:locale${getLocaleRegex()}?`,
     component: Layout,
     beforeEnter (to, from, next) {
-      console.log('beforeEnter: to ', to)
-      if (findLocaleByCode(to.params.locale)) {
+      const isFoundLocale = findLocaleByCode(to.params.locale)
+
+      if (isFoundLocale) {
         changeLocale(to.params.locale)
       }
-      if (findLocaleByCode(to.params.locale) && !isUndefined(to.params.pathMatch)) {
-        console.log('啦啦啦啦')
+      if (isFoundLocale && !isUndefined(to.params.pathMatch)) {
         next(`/${to.params.locale}/project`)
-        console.log('啦啦啦啦222')
         return
       }
       next()
