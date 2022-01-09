@@ -8,7 +8,7 @@
 🌏  Starter using Vite + Pinia + TypeScript + i18n + Element-Plus to fast build a prototyping
 
 
-__[Live demo](https://pdsuwwz.github.io/vue-boilerplate-i18n)__
+__[Live demo](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
 
 ## Environment Support
 
