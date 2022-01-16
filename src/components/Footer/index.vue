@@ -11,6 +11,7 @@
       <p
         class="text"
       >
+        <Octocat />
         MIT Licensed | Copyright © 2020-PRESENT <a
           target="_blank"
           :href="link"
@@ -24,9 +25,13 @@
 </template>
 <script lang="ts">
 import { defineComponent, ref } from 'vue'
+import Octocat from './octocat.vue'
 
 export default defineComponent({
   name: 'Footer',
+  components: {
+    Octocat
+  },
   props: {
     showBorder: {
       type: Boolean,
@@ -51,6 +56,9 @@ export default defineComponent({
   .container {
     padding: 1rem 1.5rem 1.25rem;
     .text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin: 0;
       text-align: center;
       line-height: 1.4;
@@ -63,6 +71,7 @@ export default defineComponent({
   color: #555;
   border-bottom: 1px solid rgba(#7d7d7d, .3);
   transition: border .3s ease-in-out;
+  margin-left: 6px;
   &:hover {
     border-color: #7d7d7d;
   }

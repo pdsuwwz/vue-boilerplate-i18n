@@ -5,9 +5,10 @@
       'is-dark': dark
     }"
     trigger="click"
+    popper-class="translations-box"
     @command="handleChange"
   >
-    <span>
+    <span class="icon-outer">
       <!-- Translations<el-icon class="el-icon--right">
         <ArrowDown />
       </el-icon> -->
@@ -23,7 +24,9 @@
           :command="localeItem"
           :disabled="currentLocale === localeItem.localeCode"
         >
-          {{ localeItem.localeName }}
+          <span class="custom-dropdown-item">
+            {{ localeItem.localeName }}
+          </span>
         </el-dropdown-item>
       </el-dropdown-menu>
     </template>
@@ -90,12 +93,15 @@ export default defineComponent({
   &.is-dark {
     color: #495164;
   }
-  .el-dropdown-selfdefine {
+  .icon-outer {
     display: flex;
     align-items: center;
     &:hover {
       color: $--color-primary;
     }
+  }
+  .custom-dropdown-item {
+    white-space: nowrap;
   }
 }
 </style>
