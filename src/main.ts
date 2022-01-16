@@ -17,9 +17,7 @@ const app = createApp(App)
 
 function setupPlugins() {
   app
-    .use(ElementPlus, {
-      size: 'small'
-    })
+    .use(ElementPlus)
     .use(GlobalComponents)
     .use(Widgets)
     .use(Fonts)
