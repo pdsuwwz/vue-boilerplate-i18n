@@ -54,14 +54,14 @@ export default defineComponent({
     border-top: 1px solid rgba(#3c3c43, .12);
   }
   .container {
-    padding: 1rem 1.5rem 1.25rem;
+    padding: 14px 0 14px;
     .text {
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 0;
       text-align: center;
-      line-height: 1.4;
+      line-height: 1;
       font-size: 1rem;
       color: #929292;
     }
