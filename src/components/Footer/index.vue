@@ -59,6 +59,7 @@ export default defineComponent({
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       margin: 0;
       text-align: center;
       line-height: 1;
