@@ -40,7 +40,6 @@
 import {
   computed,
   defineComponent,
-  getCurrentInstance,
   nextTick,
   onMounted,
   reactive,
@@ -175,7 +174,7 @@ export default defineComponent({
           .then(() => {
             proxy.$message({
               type: 'success',
-              message: '登录成功'
+              message: localeInject.t('login.logingSuccess')
             })
           })
           .catch(() => {})
