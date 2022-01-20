@@ -39,12 +39,19 @@
       v-loading="fullLoading"
       class="modal-container__body"
     >
-      <component
-        :is="getComponent"
-        ref="refComponent"
-        v-model="componantData"
-        class="modal-container__component"
-      />
+      <div
+        class="modal-box__inner"
+        :style="{
+          maxHeight: `${isNumberical(maxHeight) ? maxHeight + 'px': maxHeight }`
+        }"
+      >
+        <component
+          :is="getComponent"
+          ref="refComponent"
+          v-model="componantData"
+          class="modal-container__component"
+        />
+      </div>
       <div
         v-if="!hideFooter"
         class="modal-container__footer"
@@ -79,6 +86,7 @@ import {
 
 import { WarningFilled } from '@element-plus/icons-vue'
 import useCurrentInstance from '@/hooks/useCurrentInstance'
+import { isNumberical } from '@/utils/type'
 
 export default defineComponent({
   name: 'ModalDialog',
@@ -102,6 +110,10 @@ export default defineComponent({
     confirmText: {
       type: String,
       default: ''
+    },
+    maxHeight: {
+      type: [Number, String],
+      default: 'auto'
     },
     dialogWidth: {
       type: String,
@@ -184,6 +196,8 @@ export default defineComponent({
       getComponent,
       fullLoading,
       refComponent,
+
+      isNumberical,
       handleCancel,
       handleConfirm,
       getOriginAttrs,

@@ -44,7 +44,7 @@
     "url": "https://github.com/pdsuwwz/vue-boilerplate-i18n/issues"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^0.2.4",
+    "@element-plus/icons-vue": "^0.2.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
@@ -62,8 +62,8 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.8",
+    "@babel/core": "^7.16.10",
+    "@babel/preset-env": "^7.16.10",
     "@sucrase/jest-plugin": "^2.2.0",
     "@types/jest": "^27.4.0",
     "@types/js-cookie": "^3.0.1",
