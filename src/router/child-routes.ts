@@ -1,4 +1,4 @@
-import { CustomRouteItem } from '@/types/router'
+import { CustomRouteItem } from '@/types'
 
 const importModule = import.meta.glob('../modules/**/*.vue')
 const Layout = () => import('@/components/Layout/index.vue')
@@ -84,9 +84,18 @@ const childrenRoutes: Array<CustomRouteItem> = [
         path: 'overview',
         name: 'ResultOverview',
         component: importModule['../modules/Result/pages/overview.vue'],
+        icon: '',
         meta: {
           title: '总览'
-        }
+        },
+        children: [
+          {
+            path: '',
+            icon: '',
+            // la: '',
+            component: importModule['../modules/Result/pages/overview.vue']
+          }
+        ]
       }
     ]
   }
