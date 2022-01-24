@@ -53,7 +53,8 @@ module.exports = {
     // https://eslint.org/docs/rules/prefer-const
     'prefer-const': 2,
     camelcase: ['error', { properties: 'never' }],
-    indent: ['error', 2, { SwitchCase: 1 }],
+    // https://github.com/eslint/eslint/issues/13956
+    '@typescript-eslint/indent': ['error', 2, { SwitchCase: 1 }],
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/member-delimiter-style': [
