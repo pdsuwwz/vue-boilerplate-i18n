@@ -1,0 +1,1 @@
+import{_ as r}from"./index.4e608cfd.js";import{i as a,o as t,v as e}from"./vendor.d2dd3071.js";const s=a({name:"UserAccountSetting"}),n={class:"wrap-user-setting"};var v=r(s,[["render",function(o,c,i,d,m,p){return t(),e("div",n," \u8D26\u53F7\u8BBE\u7F6E ")}],["__scopeId","data-v-1032973c"]]);export{v as default};
