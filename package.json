@@ -44,7 +44,7 @@
     "url": "https://github.com/pdsuwwz/vue-boilerplate-i18n/issues"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "1.1.3",
+    "@element-plus/icons-vue": "1.1.4",
     "@fortawesome/fontawesome-svg-core": "6.1.0",
     "@fortawesome/free-brands-svg-icons": "6.1.0",
     "@fortawesome/free-regular-svg-icons": "6.1.0",
