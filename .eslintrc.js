@@ -82,6 +82,9 @@ module.exports = {
     'vue/html-closing-bracket-spacing': 'error',
     'vue/no-unused-components': 1,
     'vue/no-mutating-props': 0,
+    'vue/v-on-event-hyphenation': ['warn', 'always', {
+      autofix: true
+    }],
     'vue/script-setup-uses-vars': 'error',
     'vue/html-self-closing': ['error', {
       html: {
