@@ -50,6 +50,11 @@ Test code coverage.
 pnpm test:coverage
 ```
 
+## 😎 Awesome
+
+* [awesome-vite](https://github.com/pdsuwwz/awesome-vite)
+
+
 ## License
 
 [MIT](./LICENSE) License | Copyright © 2020-PRESENT [Wisdom](https://github.com/pdsuwwz)
