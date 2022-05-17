@@ -31,6 +31,7 @@ __[Live demo](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
 ## Screenshot
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/19891724/154831095-32a64eee-01ce-49be-ad64-626f0d276559.png">
+<img width="1440" alt="image" src="https://user-images.githubusercontent.com/19891724/168773776-2d43c03d-54dd-4364-8830-0bba65603ef4.png">
 
 
 ## Environment Support
