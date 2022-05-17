@@ -36,7 +36,7 @@ __[Live demo](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
 ## Environment Support
 
 * Vue 3.2.x
-* Node >= 14.18.x
+* Node >= 14.19.x
 
 ## Install
 
