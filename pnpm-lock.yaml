@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@babel/core': ^7.18.0
   '@babel/preset-env': ^7.18.0
-  '@element-plus/icons-vue': 2.0.0
+  '@element-plus/icons-vue': 2.0.1
   '@fortawesome/fontawesome-svg-core': 6.1.1
   '@fortawesome/free-brands-svg-icons': 6.1.1
   '@fortawesome/free-regular-svg-icons': 6.1.1
@@ -50,7 +50,7 @@ specifiers:
   vue-router: ^4.0.15
 
 dependencies:
-  '@element-plus/icons-vue': 2.0.0_vue@3.2.35
+  '@element-plus/icons-vue': 2.0.1_vue@3.2.35
   '@fortawesome/fontawesome-svg-core': 6.1.1
   '@fortawesome/free-brands-svg-icons': 6.1.1
   '@fortawesome/free-regular-svg-icons': 6.1.1
@@ -1284,8 +1284,8 @@ packages:
       vue: 3.2.35
     dev: false
 
-  /@element-plus/icons-vue/2.0.0_vue@3.2.35:
-    resolution: {integrity: sha512-54J+j3/p1FYpPfazCyqn/lVbGv41hQ/0Y2aMd/e3wfO0ZSF4VTV+z3WzkEuxfcAFAdhuTjhpBheJB3OVzMKI9g==}
+  /@element-plus/icons-vue/2.0.1_vue@3.2.35:
+    resolution: {integrity: sha512-a1N6IXw5AZx6JZQDoMBG9E1Pes1BogGTpL192SeI/piMdpEEcm4cn+MkDxhAvA9SuF1dFbdAU54EoS0xKQhjwg==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
