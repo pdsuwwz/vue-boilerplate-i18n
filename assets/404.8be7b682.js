@@ -1,0 +1,1 @@
+import{_ as a,d as n,o,b as r,e as t}from"./index.3dcdf307.js";const e=n({name:"NotFound"}),s=[t("h1",null,"NOT-FOUND 404",-1)];var c=a(e,[["render",function(u,d,l,f,i,m){return o(),r("div",null,s)}]]);export{c as default};
