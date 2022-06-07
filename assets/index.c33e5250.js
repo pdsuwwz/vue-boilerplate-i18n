@@ -1,1 +1,0 @@
-import{_ as a,d as r,o as e,b as n}from"./index.3dcdf307.js";const o=r({name:"XxBox"}),s={class:"xxx-container"};var p=a(o,[["render",function(t,c,d,x,f,i){return e(),n("div",s)}],["__scopeId","data-v-1cc75efd"]]);export{p as default};
