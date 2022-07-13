@@ -72,7 +72,7 @@
     "@types/nprogress": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue": "3.0.0",
     "@vue/compiler-sfc": "^3.2.35",
     "@vue/test-utils": "2.0.2",
     "@vue/vue3-jest": "^28.0.0",
