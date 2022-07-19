@@ -13,7 +13,7 @@ __[🚀 在线演示](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)_
 
 ## 🎉 Features
 
-* 支持 __Vue 3 + Vite 2 + TypeScript__
+* 支持 __Vue 3 + Vite 3 + TypeScript__
 * UI 框架: __Element Plus 2.x__
 * 状态管理: __Pinia__
 * 单元测试框架: __Jest__
