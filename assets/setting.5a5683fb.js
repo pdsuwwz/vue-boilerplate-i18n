@@ -1,0 +1,1 @@
+import{d as s,_ as a,o as t,b as e}from"./index.7e214e44.js";const n=s({name:"UserAccountSetting"}),o={class:"wrap-user-setting"},m=a(n,[["render",function(r,c,d,i,u,p){return t(),e("div",o," \u8D26\u53F7\u8BBE\u7F6E ")}],["__scopeId","data-v-202ad5a2"]]);export{m as default};
