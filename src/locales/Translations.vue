@@ -90,19 +90,24 @@ export default defineComponent({
   color: #fff;
   cursor: initial;
   user-select: none;
+
   &.is-dark {
     color: #495164;
   }
+
   .icon-outer {
     display: flex;
     align-items: center;
+
     & > * {
-      transition: .3s;
+      transition: 0.3s;
     }
+
     &:hover > * {
       color: $color-primary;
     }
   }
+
   .custom-dropdown-item {
     white-space: nowrap;
   }
