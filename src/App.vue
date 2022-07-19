@@ -3,6 +3,7 @@
     :locale="currentLocale"
   >
     <router-view v-slot="{ Component }">
+      <!-- https://github.com/johnsoncodehk/volar/issues/1405#issuecomment-1148123423 -->
       <Component :is="Component" />
     </router-view>
   </ElConfigProvider>
@@ -42,5 +43,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@use '@/styles/index.scss';
+@use "@/styles/index.scss";
 </style>
