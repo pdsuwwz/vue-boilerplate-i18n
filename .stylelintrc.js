@@ -47,6 +47,14 @@ module.exports = {
       }
     ],
     "block-closing-brace-empty-line-before": "never",
-    "rule-empty-line-before": ["always-multi-line"]
+    "rule-empty-line-before": ["always-multi-line"],
+
+    // 忽视 -webkit-xxxx 等兼容写法
+    "property-no-vendor-prefix": [
+      true,
+      {
+        ignoreProperties: ["box-shadow"]
+      }
+    ]
   }
 }
