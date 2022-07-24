@@ -5,10 +5,12 @@
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/vue-boilerplate-i18n?color=blue)](https://github.com/pdsuwwz/vue-boilerplate-i18n/blob/main/LICENSE)
 
-🌏  Starter using Vite + Pinia + TypeScript + i18n + Element-Plus to fast build a prototyping
+🌏  Starter using Vite 3 + Vue 3 + Pinia + TypeScript + i18n + Element-Plus 2.x to fast build a prototyping
+
+一个适用国际化语言扩展的快速迭代原型模板，集成 vue-i18n-next
 
 
-__[🚀 在线演示](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
+__[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
 
 
 ## 🎉 Features
