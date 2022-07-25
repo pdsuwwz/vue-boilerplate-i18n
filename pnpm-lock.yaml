@@ -4,10 +4,10 @@ specifiers:
   '@babel/core': ^7.18.9
   '@babel/preset-env': ^7.18.9
   '@element-plus/icons-vue': 2.0.6
-  '@fortawesome/fontawesome-svg-core': 6.1.1
-  '@fortawesome/free-brands-svg-icons': 6.1.1
-  '@fortawesome/free-regular-svg-icons': 6.1.1
-  '@fortawesome/free-solid-svg-icons': 6.1.1
+  '@fortawesome/fontawesome-svg-core': 6.1.2
+  '@fortawesome/free-brands-svg-icons': 6.1.2
+  '@fortawesome/free-regular-svg-icons': 6.1.2
+  '@fortawesome/free-solid-svg-icons': 6.1.2
   '@fortawesome/vue-fontawesome': 3.0.1
   '@sucrase/jest-plugin': ^2.2.1
   '@types/jest': ^28.1.6
@@ -59,11 +59,11 @@ specifiers:
 
 dependencies:
   '@element-plus/icons-vue': 2.0.6_vue@3.2.37
-  '@fortawesome/fontawesome-svg-core': 6.1.1
-  '@fortawesome/free-brands-svg-icons': 6.1.1
-  '@fortawesome/free-regular-svg-icons': 6.1.1
-  '@fortawesome/free-solid-svg-icons': 6.1.1
-  '@fortawesome/vue-fontawesome': 3.0.1_u4vq2zlnk6o5gih5o4cnqmjgea
+  '@fortawesome/fontawesome-svg-core': 6.1.2
+  '@fortawesome/free-brands-svg-icons': 6.1.2
+  '@fortawesome/free-regular-svg-icons': 6.1.2
+  '@fortawesome/free-solid-svg-icons': 6.1.2
+  '@fortawesome/vue-fontawesome': 3.0.1_sqiqa7hvpgqdakjrbqzbqxvzme
   axios: 0.27.2
   echarts: 5.3.3
   element-plus: 2.2.10_vue@3.2.37
@@ -1339,51 +1339,51 @@ packages:
       '@floating-ui/core': 0.7.3
     dev: false
 
-  /@fortawesome/fontawesome-common-types/6.1.1:
-    resolution: {integrity: sha512-wVn5WJPirFTnzN6tR95abCx+ocH+3IFLXAgyavnf9hUmN0CfWoDjPT/BAWsUVwSlYYVBeCLJxaqi7ZGe4uSjBA==}
+  /@fortawesome/fontawesome-common-types/6.1.2:
+    resolution: {integrity: sha512-wBaAPGz1Awxg05e0PBRkDRuTsy4B3dpBm+zreTTyd9TH4uUM27cAL4xWyWR0rLJCrRwzVsQ4hF3FvM6rqydKPA==}
     engines: {node: '>=6'}
     requiresBuild: true
     dev: false
 
-  /@fortawesome/fontawesome-svg-core/6.1.1:
-    resolution: {integrity: sha512-NCg0w2YIp81f4V6cMGD9iomfsIj7GWrqmsa0ZsPh59G7PKiGN1KymZNxmF00ssuAlo/VZmpK6xazsGOwzKYUMg==}
-    engines: {node: '>=6'}
-    requiresBuild: true
-    dependencies:
-      '@fortawesome/fontawesome-common-types': 6.1.1
-    dev: false
-
-  /@fortawesome/free-brands-svg-icons/6.1.1:
-    resolution: {integrity: sha512-mFbI/czjBZ+paUtw5NPr2IXjun5KAC8eFqh1hnxowjA4mMZxWz4GCIksq6j9ZSa6Uxj9JhjjDVEd77p2LN2Blg==}
+  /@fortawesome/fontawesome-svg-core/6.1.2:
+    resolution: {integrity: sha512-853G/Htp0BOdXnPoeCPTjFrVwyrJHpe8MhjB/DYE9XjwhnNDfuBCd3aKc2YUYbEfHEcBws4UAA0kA9dymZKGjA==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.1.1
+      '@fortawesome/fontawesome-common-types': 6.1.2
     dev: false
 
-  /@fortawesome/free-regular-svg-icons/6.1.1:
-    resolution: {integrity: sha512-xXiW7hcpgwmWtndKPOzG+43fPH7ZjxOaoeyooptSztGmJxCAflHZxXNK0GcT0uEsR4jTGQAfGklDZE5NHoBhKg==}
+  /@fortawesome/free-brands-svg-icons/6.1.2:
+    resolution: {integrity: sha512-b2eMfXQBsSxh52pcPtYchURQs6BWNh3zVTG8XH8Lv6V4kDhEg7D0kHN+K1SZniDiPb/e5tBlaygsinMUvetITA==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.1.1
+      '@fortawesome/fontawesome-common-types': 6.1.2
     dev: false
 
-  /@fortawesome/free-solid-svg-icons/6.1.1:
-    resolution: {integrity: sha512-0/5exxavOhI/D4Ovm2r3vxNojGZioPwmFrKg0ZUH69Q68uFhFPs6+dhAToh6VEQBntxPRYPuT5Cg1tpNa9JUPg==}
+  /@fortawesome/free-regular-svg-icons/6.1.2:
+    resolution: {integrity: sha512-xR4hA+tAwsaTHGfb+25H1gVU/aJ0Rzu+xIUfnyrhaL13yNQ7TWiI2RvzniAaB+VGHDU2a+Pk96Ve+pkN3/+TTQ==}
     engines: {node: '>=6'}
     requiresBuild: true
     dependencies:
-      '@fortawesome/fontawesome-common-types': 6.1.1
+      '@fortawesome/fontawesome-common-types': 6.1.2
     dev: false
 
-  /@fortawesome/vue-fontawesome/3.0.1_u4vq2zlnk6o5gih5o4cnqmjgea:
+  /@fortawesome/free-solid-svg-icons/6.1.2:
+    resolution: {integrity: sha512-lTgZz+cMpzjkHmCwOG3E1ilUZrnINYdqMmrkv30EC3XbRsGlbIOL8H9LaNp5SV4g0pNJDfQ4EdTWWaMvdwyLiQ==}
+    engines: {node: '>=6'}
+    requiresBuild: true
+    dependencies:
+      '@fortawesome/fontawesome-common-types': 6.1.2
+    dev: false
+
+  /@fortawesome/vue-fontawesome/3.0.1_sqiqa7hvpgqdakjrbqzbqxvzme:
     resolution: {integrity: sha512-CdXZJoCS+aEPec26ZP7hWWU3SaJlQPZSCGdgpQ2qGl2HUmtUUNrI3zC4XWdn1JUmh3t5OuDeRG1qB4eGRNSD4A==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6
       vue: '>= 3.0.0 < 4'
     dependencies:
-      '@fortawesome/fontawesome-svg-core': 6.1.1
+      '@fortawesome/fontawesome-svg-core': 6.1.2
       vue: 3.2.37
     dev: false
 
@@ -2118,14 +2118,12 @@ packages:
     resolution: {integrity: sha512-/7WRafBOshOc6m3F7plwzPeCu/RCVv9uMpOwa/5PiY1Zz+WLVRWiy0MYKwmg19KBdGtFWsmZ4cD+LOdVPcs52A==}
     dependencies:
       '@vue/shared': 3.2.37
-    dev: false
 
   /@vue/runtime-core/3.2.37:
     resolution: {integrity: sha512-JPcd9kFyEdXLl/i0ClS7lwgcs0QpUAWj+SKX2ZC3ANKi1U4DOtiEr6cRqFXsPwY5u1L9fAjkinIdB8Rz3FoYNQ==}
     dependencies:
       '@vue/reactivity': 3.2.37
       '@vue/shared': 3.2.37
-    dev: false
 
   /@vue/runtime-dom/3.2.37:
     resolution: {integrity: sha512-HimKdh9BepShW6YozwRKAYjYQWg9mQn63RGEiSswMbW+ssIht1MILYlVGkAGGQbkhSh31PCdoUcfiu4apXJoPw==}
@@ -2133,7 +2131,6 @@ packages:
       '@vue/runtime-core': 3.2.37
       '@vue/shared': 3.2.37
       csstype: 2.6.20
-    dev: false
 
   /@vue/server-renderer/3.2.37_vue@3.2.37:
     resolution: {integrity: sha512-kLITEJvaYgZQ2h47hIzPh2K3jG8c1zCVbp/o/bzQOyvzaKiCquKS7AaioPI28GNxIsE/zSx+EwWYsNxDCX95MA==}
@@ -2143,7 +2140,6 @@ packages:
       '@vue/compiler-ssr': 3.2.37
       '@vue/shared': 3.2.37
       vue: 3.2.37
-    dev: false
 
   /@vue/shared/3.2.37:
     resolution: {integrity: sha512-4rSJemR2NQIo9Klm1vabqWjD8rs/ZaJSzMxkMNeJS6lHiUjjUeYFbooN19NgFjztubEKh3WlZUeOLVdbbUWHsw==}
@@ -2802,7 +2798,6 @@ packages:
 
   /csstype/2.6.20:
     resolution: {integrity: sha512-/WwNkdXfckNgw6S5R125rrW8ez139lBHWouiBvX8dfMFtcn6V81REDqnH7+CRpRipfYlyU1CmOnOxrmGcFOjeA==}
-    dev: false
 
   /data-urls/3.0.2:
     resolution: {integrity: sha512-Jy/tj3ldjZJo63sVAvg6LHt2mHvl4V6AgRAmNDtLdm7faqtsx+aJG42rsyCo9JCoRVKwPFzKlIPx3DIibwSIaQ==}
@@ -6167,7 +6162,6 @@ packages:
     resolution: {integrity: sha512-C0WQT0gezHuw6AdY1M2jxUO83Rjf0HP7Sk1DtXj6j1EwkQNZrHAg2XPWlq62oqEhYvONq5pkC2Y9oPljWToLmQ==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -6338,7 +6332,6 @@ packages:
       '@vue/runtime-dom': 3.2.37
       '@vue/server-renderer': 3.2.37_vue@3.2.37
       '@vue/shared': 3.2.37
-    dev: false
 
   /w3c-hr-time/1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
