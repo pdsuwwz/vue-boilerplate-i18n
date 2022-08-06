@@ -7,10 +7,25 @@
 
 🌏 Starter using Vite 3 + Vue 3 + Pinia + TypeScript + i18n + Element-Plus 2.x to fast build a prototyping
 
-一个适用国际化多语言(i18n)扩展、快速开发 Vue3 + Vite3 + TS + Pinia 项目的原型模板框架，集成 vue-i18n-next 💪
+一个适用国际化多语言(i18n)扩展、帮助你快速开发 🚀🚀🚀 Vue3 + Vite3 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
 
 
 __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
+
+
+## 🌱 不同版本
+目前一共有以下五个不同技术栈的仓库模板在持续维护，请尝试后选择适合自己的模板使用
+
+(推荐基于在[当前仓库](https://github.com/pdsuwwz/vue-boilerplate-i18n/generate)基础上二次开发)
+
+- 💥 (推荐) [TS + Pinia + 🌐 低耦合(i18n)多语言 Vite3 + Vue3 + TS + Pinia + Element-Plus2 + vue-i18n@next](https://github.com/pdsuwwz/vue-boilerplate-i18n)
+
+- ⚡️ TS + Pinia 版 [Vite3 + Vue3 + TS + Pinia + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/pinia-starter-ts)
+- ⚡️ JS + Pinia 版 [Vite3 + Vue3 + Pinia + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-pinia-starter)
+
+- ⚡️ TS + Vuex4 版 [Vite3 + Vue3 + TS + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-ts-starter)
+- ⚡️ JS + Vuex4 版 [Vite3 + Vue3 + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-starter)
+
 
 
 ## 🎉 Features
