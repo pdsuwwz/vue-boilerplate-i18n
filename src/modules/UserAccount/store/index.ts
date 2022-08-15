@@ -1,3 +1,13 @@
+/*
+ * @Author: pdsuwwz pdsu.wwz@foxmail.com
+ * @Date: 2022-01-09 19:11:21
+ * @LastEditors: pdsuwwz pdsu.wwz@foxmail.com
+ * @LastEditTime: 2022-08-15 14:30:30
+ * @FilePath: /vue-boilerplate-i18n/src/modules/UserAccount/store/index.ts
+ * @Description:
+ *
+ * Copyright (c) 2022 by pdsuwwz pdsu.wwz@foxmail.com, All Rights Reserved.
+ */
 import { defineStore } from 'pinia'
 import { store } from '@/store'
 
@@ -25,7 +35,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
     }
   },
   getters: {
-    demoList: state => state.demoList
+    // demoList: state => state.demoList
   },
   actions: {
     async GetModuleTestList (params) {

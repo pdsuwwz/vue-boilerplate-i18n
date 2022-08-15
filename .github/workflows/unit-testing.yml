@@ -1,13 +1,13 @@
 name: Unit-Testing
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
 
 jobs:
-  Test Codecov:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
