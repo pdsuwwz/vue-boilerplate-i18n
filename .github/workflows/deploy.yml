@@ -12,20 +12,8 @@ on:
     types: [ completed ]
 
 jobs:
-  on-success:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-    steps:
-      - run: echo 'The Unit Test workflow passed'
-  on-failure:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
-    steps:
-      - run: echo 'The Unit Test workflow failed'
-
   deploy-pages:
-    needs:
-      - on-success
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     name: Deplay pages
     runs-on: ubuntu-latest
     steps:
