@@ -2,20 +2,19 @@ name: gh-pages
 
 on:
   # set triggers here, like on push or on release
-  workflow_dispatch:
+  # workflow_dispatch:
   push:
     branches: [ main ]
   pull_request:
   workflow_run:
     workflows: [ Unit-Testing ]
-    branches: [ main ]
     types: [ completed ]
 
 jobs:
-  deploy-pages:
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+  on-success:
     name: Deplay pages
     runs-on: ubuntu-latest
+    if: github.event.workflow_run.conclusion == 'success'
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
