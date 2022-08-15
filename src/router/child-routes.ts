@@ -91,6 +91,7 @@ const childrenRoutes: Array<CustomRouteItem> = [
         children: [
           {
             path: '',
+            name: 'ResultOverview',
             icon: '',
             // la: '',
             component: importModule['../modules/Result/pages/overview.vue']

@@ -1,3 +1,13 @@
+/*
+ * @Author: pdsuwwz pdsu.wwz@foxmail.com
+ * @Date: 2022-01-09 19:11:21
+ * @LastEditors: pdsuwwz pdsu.wwz@foxmail.com
+ * @LastEditTime: 2022-08-15 14:26:21
+ * @FilePath: /vue-boilerplate-i18n/src/locales/index.ts
+ * @Description:
+ *
+ * Copyright (c) 2022 by pdsuwwz pdsu.wwz@foxmail.com, All Rights Reserved.
+ */
 import { type App } from 'vue'
 // import { localeMap } from './config'
 import { createI18n } from 'vue-i18n'
@@ -13,7 +23,7 @@ async function createI18nOptions() {
 
   return {
     locale,
-    // legacy: false,
+    legacy: false,
     // fallbackLocale: locale, // set fallback locale
     messages: {
       [locale]: message as { [key: string]: string; }

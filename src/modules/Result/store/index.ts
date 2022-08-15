@@ -1,3 +1,13 @@
+/*
+ * @Author: pdsuwwz pdsu.wwz@foxmail.com
+ * @Date: 2022-01-09 19:11:21
+ * @LastEditors: pdsuwwz pdsu.wwz@foxmail.com
+ * @LastEditTime: 2022-08-15 14:30:55
+ * @FilePath: /vue-boilerplate-i18n/src/modules/Result/store/index.ts
+ * @Description:
+ *
+ * Copyright (c) 2022 by pdsuwwz pdsu.wwz@foxmail.com, All Rights Reserved.
+ */
 import { defineStore } from 'pinia'
 
 import { sleep } from '@/utils/request'
@@ -26,7 +36,7 @@ export const useResultStore = defineStore('Result', {
     }
   },
   getters: {
-    demoList: (state) => state.demoList
+    // demoList: (state) => state.demoList
   },
 
   actions: {

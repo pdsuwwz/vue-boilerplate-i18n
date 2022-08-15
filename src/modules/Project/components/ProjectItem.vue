@@ -231,6 +231,8 @@ export default defineComponent({
 
     .project-item-action__status {
       padding-left: 6px;
+      flex: 1;
+      min-width: 0;
     }
 
     &.active {
