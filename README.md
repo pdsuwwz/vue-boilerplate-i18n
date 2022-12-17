@@ -1,7 +1,7 @@
 # vue-boilerplate-i18n
 
 [![Deploy](https://github.com/pdsuwwz/vue-boilerplate-i18n/workflows/gh-pages/badge.svg)](https://github.com/pdsuwwz/vue-boilerplate-i18n/actions/workflows/deploy.yml)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/pdsuwwz/vue-boilerplate-i18n/gh-pages/main)](https://github.com/pdsuwwz/vue-boilerplate-i18n/deployments/activity_log?environment=github-pages)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/actions/workflow/status/pdsuwwz/vue-boilerplate-i18n/deploy.yml?branch=main)](https://github.com/pdsuwwz/vue-boilerplate-i18n/deployments/activity_log?environment=github-pages)
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/vue-boilerplate-i18n?color=blue)](https://github.com/pdsuwwz/vue-boilerplate-i18n/blob/main/LICENSE)
 
