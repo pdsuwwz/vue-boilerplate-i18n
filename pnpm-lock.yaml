@@ -50,7 +50,7 @@ specifiers:
   stylelint-config-standard: ^29.0.0
   stylelint-config-standard-scss: 6.1.0
   sucrase: ^3.28.0
-  ts-jest: 29.0.4
+  ts-jest: 29.0.5
   typescript: ^4.8.4
   vite: ^4.0.0
   vue: ^3.2.41
@@ -112,7 +112,7 @@ devDependencies:
   stylelint-config-standard: 29.0.0_stylelint@14.14.0
   stylelint-config-standard-scss: 6.1.0_mnalcscwzozovshmobozjae4pq
   sucrase: 3.28.0
-  ts-jest: 29.0.4_zhtuaulwu4t7uklkd45vzjjgru
+  ts-jest: 29.0.5_zhtuaulwu4t7uklkd45vzjjgru
   typescript: 4.8.4
   vite: 4.0.0_rmrvkutz4tttu5loknv35czto4
 
@@ -5983,8 +5983,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-jest/29.0.4_zhtuaulwu4t7uklkd45vzjjgru:
-    resolution: {integrity: sha512-YdNofkoyzeinwjIqLSYQeAM+GTmFQ7xFNtWcR5OyitY5VLzzNINrNmfhP5H3daA/V+RGQR7O3g1K6ysRgu5xIQ==}
+  /ts-jest/29.0.5_zhtuaulwu4t7uklkd45vzjjgru:
+    resolution: {integrity: sha512-PL3UciSgIpQ7f6XjVOmbi96vmDHUqAyqDr8YxzopDqX3kfgYtX1cuNeBjP+L9sFXi6nzsGGA6R3fP3DDDJyrxA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     hasBin: true
     peerDependencies:
