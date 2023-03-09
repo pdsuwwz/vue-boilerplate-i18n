@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
 
-    "declaration": true,
+    "declaration": false,
     "noImplicitAny": false,
     "removeComments": true,
     "noLib": false,
@@ -37,7 +37,8 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue",
-    "__tests__/**/*.ts"
+    "__tests__/**/*.ts",
+    "./auto-imports.d.ts",
   ],
   "exclude": ["node_modules"]
 }

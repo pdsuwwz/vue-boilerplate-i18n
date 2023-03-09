@@ -14,8 +14,6 @@
 <script lang="ts">
 import { useI18n } from 'vue-i18n'
 
-import { computed, defineComponent, reactive } from 'vue'
-
 export default defineComponent({
   name: 'ProjectTableHeader',
   setup () {

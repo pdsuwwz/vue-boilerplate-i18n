@@ -58,9 +58,6 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, nextTick, ref } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-
 export default defineComponent({
   name: 'DialogModal',
   components: {

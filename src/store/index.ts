@@ -1,4 +1,3 @@
-import type { App } from 'vue'
 import { createPinia } from 'pinia'
 import { pluginPinia } from '@/store/plugins'
 

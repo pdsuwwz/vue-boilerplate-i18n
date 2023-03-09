@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
+// https://github.com/vuejs/language-tools/issues/1232#issuecomment-1406583753
 interface Props {
   msg: string
 }

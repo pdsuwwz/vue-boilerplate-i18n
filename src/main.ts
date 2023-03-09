@@ -1,5 +1,3 @@
-import { createApp } from 'vue'
-
 import { setupRouter } from '@/router'
 import { setupStore } from '@/store'
 import { setupI18n } from '@/locales'

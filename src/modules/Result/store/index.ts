@@ -40,7 +40,7 @@ export const useResultStore = defineStore('Result', {
   },
 
   actions: {
-    async getResultOverview ({ commit }, query) {
+    async getResultOverview (params: any) {
       // const res = await getDemoTestList(query)
       // return this.filterResponse(res, null, () => {})
       await sleep(800)
