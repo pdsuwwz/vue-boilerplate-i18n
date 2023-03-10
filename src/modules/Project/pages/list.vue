@@ -42,14 +42,6 @@
 </template>
 
 <script lang="ts">
-import {
-  computed,
-  defineComponent,
-  getCurrentInstance,
-  onBeforeMount,
-  onMounted,
-  reactive
-} from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import NavigationSideLogo from '@/components/Navigation/Side/SideLogo.vue'
@@ -61,7 +53,6 @@ import ProjectTableBody from '@/modules/Project/components/TableBody.vue'
 
 import SearchCorporation from '@/components/SearchSelect/SearchCorporation.vue'
 import { sleep } from '@/utils/request'
-import useCurrentInstance from '@/hooks/useCurrentInstance'
 
 import { useProjectStore } from '@/modules/Project/store'
 

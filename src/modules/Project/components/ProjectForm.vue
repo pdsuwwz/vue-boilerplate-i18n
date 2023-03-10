@@ -54,9 +54,6 @@
 </template>
 
 <script lang="ts">
-import useCurrentInstance from '@/hooks/useCurrentInstance'
-import { defineComponent, getCurrentInstance, ref } from 'vue'
-
 export default defineComponent({
   name: 'ProjectForm',
   props: {

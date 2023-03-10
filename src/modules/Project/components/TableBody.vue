@@ -21,8 +21,6 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent } from 'vue'
-
 import { useProjectStore } from '@/modules/Project/store'
 
 import ProjectItem from '@/modules/Project/components/ProjectItem.vue'

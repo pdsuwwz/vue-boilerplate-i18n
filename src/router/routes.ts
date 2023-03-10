@@ -1,4 +1,3 @@
-import { CustomRouteItem } from '@/types'
 import childrenRoutes from '@/router/child-routes'
 import { localesMapping, findLocaleByCode } from '@/locales/config'
 import { isUndefined } from '@/utils/type'
@@ -16,7 +15,7 @@ function getLocaleRegex () {
   return `(${reg})`
 }
 
-const routes: Array<CustomRouteItem> = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Root',

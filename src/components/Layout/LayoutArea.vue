@@ -24,13 +24,11 @@
         </section>
       </div>
     </div>
-    <Footer show-border />
+    <MyFooter show-border />
   </div>
 </template>
 
 <script lang="ts">
-
-import { defineComponent } from 'vue'
 
 /**
  * 上下左右布局，顶部导航 + (底部左侧侧边栏 + 底部右侧内容区域)

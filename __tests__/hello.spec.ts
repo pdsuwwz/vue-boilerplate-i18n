@@ -1,6 +1,5 @@
-/**
- * @jest-environment jsdom
- */
+
+import { expect, test } from 'vitest'
 import { mount } from '@vue/test-utils'
 import HelloWorld from '@/components/HelloWorld/index.vue'
 

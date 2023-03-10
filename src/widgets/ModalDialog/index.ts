@@ -1,4 +1,3 @@
-import { App, createVNode, render, nextTick, AppContext, RendererElement, RendererNode, VNode, ComponentPublicInstance, VNodeProps, VNodeTypes, DefineComponent, Ref, ComponentInternalInstance } from 'vue'
 import Modal from '@/widgets/ModalDialog/modal.vue'
 import { DialogProps } from 'element-plus'
 
@@ -12,7 +11,7 @@ declare module 'vue' {
 }
 
 const extractData = (options: PropsOptionsMixed) => {
-  const extractSlotComponents = (renderComponent: RenderComponent) => {
+  const extractSlotComponents = (renderComponent) => {
     const component: any = {}
     let componantData = {}
 
@@ -58,7 +57,7 @@ type Mutable = {
 }
 
 type PropsOptionsUnion = ComponentOriginOptions | Mutable
-type PropsOptionsMixed = ComponentOriginOptions & Mutable
+type PropsOptionsMixed = Partial<ComponentOriginOptions & Mutable>
 
 export default {
   install (app: App<any>) {

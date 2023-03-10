@@ -31,20 +31,11 @@
         </template>
       </UserAccountContainerLayout>
     </div>
-    <Footer />
+    <MyFooter />
   </div>
 </template>
 
 <script lang="ts">
-
-import {
-  computed,
-  defineComponent,
-  nextTick,
-  onMounted,
-  reactive,
-  ref
-} from 'vue'
 import { useI18n } from 'vue-i18n'
 import { Promotion } from '@element-plus/icons-vue'
 
@@ -54,8 +45,7 @@ import Translations from '@/locales/Translations.vue'
 
 import Cookie from 'js-cookie'
 import { useUserAccountStore } from '@/modules/UserAccount/store'
-import { useRoute, useRouter } from 'vue-router'
-import useCurrentInstance from '@/hooks/useCurrentInstance'
+import { ElMessage } from 'element-plus'
 
 export default defineComponent({
   name: 'UserAccountLogin',
@@ -94,7 +84,7 @@ export default defineComponent({
             text: localeInject.t('login.signin'),
             on: {
               click (refForm: any) {
-                proxy.onSubmit(refForm)
+                onSubmit(refForm)
               }
             }
           }
@@ -172,7 +162,7 @@ export default defineComponent({
         router
           .replace(`/${route.params.locale || ''}`)
           .then(() => {
-            proxy.$message({
+            ElMessage({
               type: 'success',
               message: localeInject.t('login.logingSuccess')
             })

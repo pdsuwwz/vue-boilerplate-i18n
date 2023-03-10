@@ -24,11 +24,10 @@
   </footer>
 </template>
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
 import Octocat from './octocat.vue'
 
 export default defineComponent({
-  name: 'Footer',
+  name: 'MyFooter',
   components: {
     Octocat
   },

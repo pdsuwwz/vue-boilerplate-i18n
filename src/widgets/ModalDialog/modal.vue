@@ -4,7 +4,7 @@
     :title="title"
     :show-close="false"
     :width="dialogWidth"
-    :custom-class="getDialogClassName"
+    :class="getDialogClassName"
     v-bind="getOriginAttrs()"
     @closed="handleRealClosed"
   >
@@ -76,16 +76,8 @@
 </template>
 
 <script lang="ts">
-import {
-  defineComponent,
-  getCurrentInstance,
-  ref,
-  computed,
-  reactive
-} from 'vue'
 
 import { WarningFilled } from '@element-plus/icons-vue'
-import useCurrentInstance from '@/hooks/useCurrentInstance'
 import { isNumberical } from '@/utils/type'
 
 export default defineComponent({

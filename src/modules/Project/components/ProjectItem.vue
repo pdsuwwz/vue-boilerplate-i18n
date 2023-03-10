@@ -71,11 +71,9 @@
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, getCurrentInstance, ref } from 'vue'
 import { Loading } from '@element-plus/icons-vue'
 
 import { sleep } from '@/utils/request'
-import useCurrentInstance from '@/hooks/useCurrentInstance'
 import { ElMessage } from 'element-plus'
 
 // TODO: Hide it temporarily

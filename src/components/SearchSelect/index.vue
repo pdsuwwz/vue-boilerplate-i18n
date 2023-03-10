@@ -40,11 +40,9 @@
 </template>
 
 <script lang="ts">
-import { ComponentPublicInstance, defineComponent, getCurrentInstance, nextTick, PropType, ref, watch } from 'vue'
 import { Loading } from '@element-plus/icons-vue'
 
 import { debounce } from 'lodash'
-import useCurrentInstance from '@/hooks/useCurrentInstance'
 
 export default defineComponent({
   name: 'SearchSelect',

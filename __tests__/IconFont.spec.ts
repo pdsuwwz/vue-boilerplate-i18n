@@ -1,6 +1,5 @@
-/**
- * @jest-environment jsdom
- */
+import { expect, describe, it } from 'vitest'
+
 import { mount } from '@vue/test-utils'
 import IconFontComponent from '@/components/IconFont/index.vue'
 

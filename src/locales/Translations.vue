@@ -33,11 +33,8 @@
   </el-dropdown>
 </template>
 <script lang="ts">
-import { computed, defineComponent, nextTick, ref } from 'vue'
 import { localesMapping } from '@/locales/config'
 import { useUserAccountStore } from '@/modules/UserAccount/store'
-
-import { useRoute, useRouter } from 'vue-router'
 
 import { ArrowDown } from '@element-plus/icons-vue'
 import LogoIcon from '@/locales/LogoIcon.vue'

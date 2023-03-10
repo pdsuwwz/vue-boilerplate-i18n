@@ -8,7 +8,6 @@
  *
  * Copyright (c) 2022 by pdsuwwz pdsu.wwz@foxmail.com, All Rights Reserved.
  */
-import { type App } from 'vue'
 // import { localeMap } from './config'
 import { createI18n } from 'vue-i18n'
 // import { setHtmlPageLang, setLoadLocalePool } from './helper'

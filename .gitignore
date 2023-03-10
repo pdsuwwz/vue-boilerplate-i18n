@@ -9,7 +9,6 @@
 /coverage
 
 # production
-/build
 /dist
 /dist-ssr
 
@@ -22,3 +21,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 .eslintcache
+
+# IDE
+.idea
+auto-imports.d.ts
+components.d.ts
+.eslintrc-auto-import.json

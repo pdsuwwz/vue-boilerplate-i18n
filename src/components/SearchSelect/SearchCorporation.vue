@@ -11,10 +11,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
-
 import SearchSelect from '@/components/SearchSelect/index.vue'
-import ProjectModule from '@/modules/Project/store'
+import { useProjectStore } from '@/modules/Project/store'
 import {
   corporationList
 } from '@/modules/Project/data'

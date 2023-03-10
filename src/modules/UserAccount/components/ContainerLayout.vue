@@ -85,12 +85,9 @@
 
 <script lang="ts">
 
-import { defineComponent, getCurrentInstance, ref } from 'vue'
-
 import { omit } from 'lodash'
 
 import { isFunction } from '@/utils/type'
-import useCurrentInstance from '@/hooks/useCurrentInstance'
 
 export default defineComponent({
   name: 'UserAccountContainerLayout',

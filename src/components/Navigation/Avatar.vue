@@ -30,10 +30,8 @@
 <script lang="ts">
 import Cookie from 'js-cookie'
 import { useI18n } from 'vue-i18n'
-import { computed, defineComponent } from 'vue'
 
 import { SwitchButton } from '@element-plus/icons-vue'
-import { useRoute, useRouter } from 'vue-router'
 
 export default defineComponent({
   name: 'NavigationAvatar',
