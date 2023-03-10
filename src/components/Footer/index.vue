@@ -27,7 +27,7 @@
 import Octocat from './octocat.vue'
 
 export default defineComponent({
-  name: 'Footer',
+  name: 'MyFooter',
   components: {
     Octocat
   },

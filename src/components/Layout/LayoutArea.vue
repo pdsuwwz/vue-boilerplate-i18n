@@ -24,7 +24,7 @@
         </section>
       </div>
     </div>
-    <Footer show-border />
+    <MyFooter show-border />
   </div>
 </template>
 

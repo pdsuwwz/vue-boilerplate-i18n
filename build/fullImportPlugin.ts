@@ -12,21 +12,18 @@ export default function FullImportPlugin () {
     transform (code, id) {
       // 判断当前处理的是否是 src/main.ts
       if (path.join(config.root, 'src/main.ts') === id) {
-        const name = 'ElementPlus'
-        const locale = 'zhCn'
+        const ElementPlus = 'ElementPlus'
 
-        // 引入 ElementPlus 和 样式
-        const prepend = `import ${name} from 'element-plus';\nimport 'element-plus/dist/index.css';\n`
+        // 引入 ElementPlus 和样式
+        const importCode = `\nimport ${ElementPlus} from 'element-plus';\n`
 
-        const language = `import ${locale} from 'element-plus/dist/locale/zh-cn.mjs';`
+        // 在 App 和 Fonts import 代码之间插入 ElementPlus 的 import 代码
+        // code = code.slice(0, appIndex) + importCode + code.slice(appIndex, fontsIndex) + code.slice(fontsIndex)
 
-        // 通过匹配字符串来使用 ElementPlus （此处替换规则根据 main.ts 的情况而定）
-        // 相当于将字符串 `app.use(router).mount('#app')` 替换成 `app.use(router).use(ElementPlus).mount('#app')`
-        code = code.replace('.mount(', ($1) => `.use(${name},{
-          locale: ${locale}
-        })` + $1)
-        
-        return prepend + language + code
+        code = code.replace('const app', ($1) => importCode + $1)
+        code = code.replace('.use(', ($1) => `.use(${ElementPlus})` + $1)
+
+        return code
       }
       return code
     }
