@@ -1,5 +1,5 @@
 import path from 'path'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 
 import AutoImport from 'unplugin-auto-import/vite'
@@ -150,6 +150,21 @@ export default defineConfig(({ mode }) => {
           additionalData: `@use '@/styles/element-variables.scss' as *;`
         }
       }
+    },
+    test: {
+      globals: true,
+      dir: '__tests__',
+      environment: 'jsdom',
+      alias: [
+        {
+          find: 'vue-i18n',
+          replacement: 'vue-i18n/dist/vue-i18n.cjs.js'
+        },
+        {
+          find: '@',
+          replacement: path.resolve(__dirname, 'src')
+        }
+      ]
     }
   }
 })
