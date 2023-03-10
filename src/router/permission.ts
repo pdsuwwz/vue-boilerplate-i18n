@@ -1,5 +1,3 @@
-import router from '@/router'
-
 import { useUserAccountStore } from '@/modules/UserAccount/store'
 
 import Cookie from 'js-cookie'
