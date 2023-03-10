@@ -1,8 +1,3 @@
-import {
-  createRouter,
-  createWebHistory,
-  createWebHashHistory
-} from 'vue-router'
 import { createRouterGuards } from '@/router/permission'
 import routes from './routes'
 
