@@ -5,7 +5,7 @@
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/vue-boilerplate-i18n?color=blue)](https://github.com/pdsuwwz/vue-boilerplate-i18n/blob/main/LICENSE)
 
-🌏 Starter using Vite 4 + Vue 3 + Pinia + TypeScript + i18n + Element-Plus 2.x to fast build a prototyping
+🌏 Starter using Vite 4 + Vue 3 + Pinia + TypeScript + i18n + Unplugin + Element-Plus 2.x to fast build a prototyping
 
 一个适用国际化多语言(i18n)扩展、帮助你快速开发 B 端 🚀🚀🚀 Vue3 + Vite4 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
 
