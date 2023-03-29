@@ -54,7 +54,7 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 ## Environment Support
 
 * Vue 3.2.x
-* Node >= 14.19.x
+* Node >= 16.4.x
 
 ## Install
 
