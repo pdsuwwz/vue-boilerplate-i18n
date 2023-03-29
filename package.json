@@ -17,7 +17,7 @@
     "stylelint:fix": "stylelint --fix .scss, .vue ./src"
   },
   "engines": {
-    "node": ">= 14.19.x"
+    "node": ">= 16.4.x"
   },
   "keywords": [
     "vue",
