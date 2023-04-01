@@ -142,8 +142,8 @@ devDependencies:
     specifier: ^1.4.0
     version: 1.4.0(postcss-html@1.5.0)(stylelint@15.3.0)
   stylelint-config-standard:
-    specifier: ^31.0.0
-    version: 31.0.0(stylelint@15.3.0)
+    specifier: ^32.0.0
+    version: 32.0.0(stylelint@15.3.0)
   stylelint-config-standard-scss:
     specifier: 7.0.1
     version: 7.0.1(postcss@8.4.21)(stylelint@15.3.0)
@@ -5090,10 +5090,10 @@ packages:
       stylelint-config-recommended: 10.0.1(stylelint@15.3.0)
     dev: true
 
-  /stylelint-config-standard@31.0.0(stylelint@15.3.0):
-    resolution: {integrity: sha512-CUGAmtROCvX0YgMY2+6P9tqSkHj5z/75XxrQ8bGxvkCa1xYdGDx4poM0pa7cXc3s74/PZLJH/okxZZouRfOSGw==}
+  /stylelint-config-standard@32.0.0(stylelint@15.3.0):
+    resolution: {integrity: sha512-UnGJxYDyYFrIE9CjDMZRkrNh2o4lOtO+MVZ9qG5b8yARfsWho0GMx4YvhHfsv8zKKgHeWX2wfeyxmuoqcaYZ4w==}
     peerDependencies:
-      stylelint: ^15.3.0
+      stylelint: ^15.4.0
     dependencies:
       stylelint: 15.3.0
       stylelint-config-recommended: 11.0.0(stylelint@15.3.0)
@@ -5498,6 +5498,7 @@ packages:
 
   /update-browserslist-db@1.0.10(browserslist@4.21.5):
     resolution: {integrity: sha512-OztqDenkfFkbSG+tRxBeAnCVPckDBcvibKd35yDONx6OU8N7sqgwc7rCbkJ/WcYtVRZ4ba68d6byhC21GFh7sQ==}
+    hasBin: true
     peerDependencies:
       browserslist: '>= 4.21.0'
     dependencies:
@@ -5570,6 +5571,7 @@ packages:
   /vite@4.1.4(@types/node@18.14.6)(sass@1.58.3):
     resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
     peerDependencies:
       '@types/node': '>= 14'
       less: '*'
@@ -5604,6 +5606,7 @@ packages:
   /vitest@0.29.2(jsdom@21.1.0)(sass@1.58.3):
     resolution: {integrity: sha512-ydK9IGbAvoY8wkg29DQ4ivcVviCaUi3ivuPKfZEVddMTenFHUfB8EEDXQV8+RasEk1ACFLgMUqAaDuQ/Nk+mQA==}
     engines: {node: '>=v14.16.0'}
+    hasBin: true
     peerDependencies:
       '@edge-runtime/vm': '*'
       '@vitest/browser': '*'
@@ -5659,6 +5662,7 @@ packages:
   /vue-demi@0.13.11(vue@3.2.47):
     resolution: {integrity: sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A==}
     engines: {node: '>=12'}
+    hasBin: true
     requiresBuild: true
     peerDependencies:
       '@vue/composition-api': ^1.0.0-rc.1
