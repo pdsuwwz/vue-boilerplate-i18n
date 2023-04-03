@@ -17,8 +17,9 @@
     "stylelint:fix": "stylelint --fix .scss, .vue ./src"
   },
   "engines": {
-    "node": ">= 16.14.x"
+    "node": ">= 16.15.x"
   },
+  "packageManager": "pnpm@7.29.0",
   "keywords": [
     "vue",
     "vue3",
