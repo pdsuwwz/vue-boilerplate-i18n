@@ -136,8 +136,8 @@ devDependencies:
     specifier: ^15.3.0
     version: 15.3.0
   stylelint-config-recommended-scss:
-    specifier: 9.0.1
-    version: 9.0.1(postcss@8.4.21)(stylelint@15.3.0)
+    specifier: 10.0.0
+    version: 10.0.0(postcss@8.4.21)(stylelint@15.3.0)
   stylelint-config-recommended-vue:
     specifier: ^1.4.0
     version: 1.4.0(postcss-html@1.5.0)(stylelint@15.3.0)
@@ -5018,6 +5018,22 @@ packages:
     dependencies:
       postcss-html: 1.5.0
       stylelint: 15.3.0
+    dev: true
+
+  /stylelint-config-recommended-scss@10.0.0(postcss@8.4.21)(stylelint@15.3.0):
+    resolution: {integrity: sha512-+YvPgUHi0W5mCJCKdupBCIsWPYNbWuJcRmFtSYujwNg+41ljFknhO9bpY6C+oahv659zW7W1AT7i6DQvJYYr1A==}
+    peerDependencies:
+      postcss: ^8.3.3
+      stylelint: ^15.3.0
+    peerDependenciesMeta:
+      postcss:
+        optional: true
+    dependencies:
+      postcss: 8.4.21
+      postcss-scss: 4.0.6(postcss@8.4.21)
+      stylelint: 15.3.0
+      stylelint-config-recommended: 11.0.0(stylelint@15.3.0)
+      stylelint-scss: 4.6.0(stylelint@15.3.0)
     dev: true
 
   /stylelint-config-recommended-scss@9.0.1(postcss@8.4.21)(stylelint@15.3.0):
