@@ -76,7 +76,7 @@
     "@typescript-eslint/eslint-plugin": "^5.54.1",
     "@typescript-eslint/parser": "^5.54.1",
     "@vitejs/plugin-vue": "^4.0.0",
-    "@vitest/coverage-c8": "^0.29.2",
+    "@vitest/coverage-c8": "^0.30.0",
     "@vue/compiler-sfc": "^3.2.47",
     "@vue/test-utils": "2.3.2",
     "babel-plugin-transform-vite-meta-env": "^1.0.3",
@@ -102,6 +102,6 @@
     "unplugin-auto-import": "^0.15.1",
     "unplugin-vue-components": "^0.24.1",
     "vite": "^4.1.4",
-    "vitest": "^0.29.2"
+    "vitest": "^0.30.0"
   }
 }
