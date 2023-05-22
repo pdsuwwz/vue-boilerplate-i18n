@@ -255,7 +255,7 @@ export default defineComponent({
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (width <= 600px) {
 
   .user-account-container-layout {
     justify-content: center;

@@ -1,4 +1,4 @@
-import { CustomRouteItem } from '@/types'
+// import { CustomRouteItem } from '@/types'
 
 const importModule = import.meta.glob('../modules/**/*.vue')
 const Layout = () => import('@/components/Layout/index.vue')
