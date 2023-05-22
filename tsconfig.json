@@ -23,7 +23,8 @@
     "types": [
       "vite/client",
       "vitest/globals",
-      "node"
+      "node",
+      "element-plus/global"
     ],
     "baseUrl": "./",
     "paths": {

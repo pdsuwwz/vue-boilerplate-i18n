@@ -67,7 +67,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
     },
     async getUserInfo () {
       const res = await getUserInfoData()
-      await sleep(1000)
+      await sleep(200)
       return this.filterResponse(res, ({ data }) => {
         this.userInfo = data
       })
