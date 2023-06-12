@@ -89,11 +89,5 @@ declare global {
   type PropsOptionsUnion = ComponentOriginOptions | Mutable
   type PropsOptionsMixed = Partial<ComponentOriginOptions & Mutable>
 
-  interface CustomRouteItem extends Omit<RouteRecordRaw, 'children'> {
-    title?: string
-    icon?: string
-    children?: CustomRouteItem[]
-  }
-
 }
 export { }
