@@ -1,5 +1,8 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: false
+
 dependencies:
   '@element-plus/icons-vue':
     specifier: 2.1.0
