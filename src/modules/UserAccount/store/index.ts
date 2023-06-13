@@ -1,13 +1,3 @@
-/*
- * @Author: pdsuwwz pdsu.wwz@foxmail.com
- * @Date: 2022-01-09 19:11:21
- * @LastEditors: pdsuwwz pdsu.wwz@foxmail.com
- * @LastEditTime: 2022-08-15 14:30:30
- * @FilePath: /vue-boilerplate-i18n/src/modules/UserAccount/store/index.ts
- * @Description:
- *
- * Copyright (c) 2022 by pdsuwwz pdsu.wwz@foxmail.com, All Rights Reserved.
- */
 import { defineStore } from 'pinia'
 import { store } from '@/store'
 
@@ -19,6 +9,7 @@ import {
   updateChangeLanguage
 } from '@/modules/UserAccount/api'
 import { changeLocale } from '@/locales/useLocale'
+import { DEFAULT_LANG } from '@/locales/config'
 
 export interface IUserAccountState {
   locale: string
@@ -29,7 +20,7 @@ export interface IUserAccountState {
 export const useUserAccountStore = defineStore('UserAccount', {
   state: (): IUserAccountState => {
     return {
-      locale: 'en',
+      locale: DEFAULT_LANG,
       demoList: {},
       userInfo: {}
     }
@@ -57,7 +48,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
       this.locale = data.locale
     },
     async login (data) {
-      await sleep(1000)
+      await sleep(340)
       const res = await login(data)
       return this.filterResponse(res, null, () => {})
     },

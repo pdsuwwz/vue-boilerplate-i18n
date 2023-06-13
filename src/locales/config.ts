@@ -1,15 +1,26 @@
+import elementEnLocale from 'element-plus/lib/locale/lang/en'
+import elementZhLocale from 'element-plus/lib/locale/lang/zh-cn'
+
+/**
+ * 缺省值 i18n 语言
+ */
+export const DEFAULT_LANG = 'zh-hans'
 
 export const localesMapping = [
   {
     localeCode: 'zh-hans',
-    localeName: '简体中文'
+    localeName: '简体中文',
+    elementLocale: elementZhLocale
   },
   {
     localeCode: 'en',
-    localeName: 'English'
+    localeName: 'English',
+    elementLocale: elementEnLocale
   }
 ]
 
 export const findLocaleByCode = (targetLocaleCode) => {
-  return localesMapping.find(localeItem => localeItem.localeCode === targetLocaleCode)
+  return localesMapping.find(
+    localeItem => localeItem.localeCode === targetLocaleCode
+  )
 }

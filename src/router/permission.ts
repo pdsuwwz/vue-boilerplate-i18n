@@ -33,29 +33,25 @@ export function createRouterGuards(router: Router) {
       return
     }
 
+    if (!Cookie.get('token')) {
+      next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+      return
+    }
+
     // 获取用户信息
     const { data, error } = await userAccountStore.getUserInfo()
 
     if (error) {
-      changeLocale(currentRouteLocale || data.language)
       Cookie.remove('token')
-      Cookie.remove('name')
-      next('/en/user/login')
+      const _locale = changeLocale(
+        currentRouteLocale || userAccountStore.locale
+      )
+      next(`/${_locale}/user/login`)
       return
     }
 
-    if (data.user.username && Cookie.get('name') === data.user.username) {
-      // TODO: It must be used together with the backend
-      changeLocale(currentRouteLocale || data.language)
-      next()
-      return
-    }
-
-    // ElMessage.error('登录失败，请重新登录')
-    Cookie.remove('token')
-    Cookie.remove('name')
-    changeLocale(currentRouteLocale || userAccountStore.locale)
-    next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+    changeLocale(currentRouteLocale || data.language)
+    next()
   })
 
   router.afterEach((to) => {

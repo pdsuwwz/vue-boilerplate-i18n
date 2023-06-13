@@ -1,3 +1,4 @@
+import { DEFAULT_LANG } from '@/locales/config'
 import request from '@/utils/request'
 
 export function login (data) {
@@ -11,10 +12,9 @@ export function login (data) {
     error: 0,
     msg: 'OK',
     data: {
-      language: 'en',
+      language: DEFAULT_LANG,
       user: {
         email: 'admin@org.com',
-        phone: '15290788137',
         username: '管理员',
         id: '601d85900f43923hffbcs',
         token: '4v8acea-6a89-2a2ebc-10802-9ac19003'
@@ -39,10 +39,9 @@ export function getUserInfoData(params = {}) {
     error: 0,
     msg: 'OK',
     data: {
-      language: 'en',
+      language: DEFAULT_LANG,
       user: {
         email: 'admin@org.com',
-        phone: '15290788137',
         username: '管理员',
         id: '601d85900f43923hffbcs',
         token: '4v8acea-6a89-2a2ebc-10802-9ac19003'
