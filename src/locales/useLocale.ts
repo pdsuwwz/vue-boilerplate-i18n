@@ -1,6 +1,7 @@
 import { i18n } from '@/locales'
 
 import { useUserAccountStore, useUserAccountStoreWithOut } from '@/modules/UserAccount/store'
+import { DEFAULT_LANG, findLocaleByCode } from './config'
 
 export function setI18nLanguage(locale) {
   const localeStore = useUserAccountStoreWithOut()
@@ -18,6 +19,8 @@ export function setI18nLanguage(locale) {
 // Switching the language will change the locale of useI18n
 // And submit to configuration modification
 export async function changeLocale(locale) {
+  locale = locale || DEFAULT_LANG
+
   const globalI18n = i18n.global
   const currentLocale = unref(globalI18n.locale)
   if (currentLocale === locale) {
@@ -37,7 +40,10 @@ export const useLocale = () => {
   const store = useUserAccountStore()
   const getLocale = computed(() => store.locale)
 
-  return computed((): any => {
-    return i18n.global.getLocaleMessage(getLocale.value)
-  })
+  return {
+    currentElementLang: computed(() => {
+      const { elementLocale } = findLocaleByCode(getLocale.value)!
+      return elementLocale
+    })
+  }
 }

@@ -1,9 +1,7 @@
-import elementEnLocale from 'element-plus/lib/locale/lang/en'
 import { systemTitle } from '@/locales/data'
 
 /* English namespaced */
 export default {
-  ...elementEnLocale,
   base: {
     systemTitle: systemTitle,
     goback: 'Back to the previous page',

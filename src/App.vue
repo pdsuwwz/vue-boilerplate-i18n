@@ -1,6 +1,6 @@
 <template>
   <ElConfigProvider
-    :locale="currentLocale"
+    :locale="currentElementLang"
   >
     <router-view v-slot="{ Component }">
       <!-- https://github.com/johnsoncodehk/volar/issues/1405#issuecomment-1148123423 -->
@@ -17,19 +17,19 @@ export default defineComponent({
   setup () {
     const route = useRoute()
 
-    const currentLocale = useLocale()
+    const { currentElementLang } = useLocale()
 
     watch(
       () => route.params,
       () => {
         if (route.name === '404') return
 
-        changeLocale(route.params.locale || 'en')
+        changeLocale(route.params.locale)
       }
     )
 
     return {
-      currentLocale
+      currentElementLang
     }
   }
 })

@@ -1,8 +1,5 @@
-import elementZhLocale from 'element-plus/lib/locale/lang/zh-cn'
-
 /* 中文 按模块划分 */
 export default {
-  ...elementZhLocale,
   base: {
     systemTitle: 'i18n 启动项目',
     goback: '返回',

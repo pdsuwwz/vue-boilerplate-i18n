@@ -158,7 +158,6 @@ export default defineComponent({
         }
 
         Cookie.set('token', data.user.token)
-        Cookie.set('name', data.user.username)
         router
           .replace(`/${route.params.locale || ''}`)
           .then(() => {
