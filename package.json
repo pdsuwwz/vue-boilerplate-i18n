@@ -56,7 +56,7 @@
     "@vueuse/core": "^10.1.2",
     "axios": "1.4.0",
     "echarts": "^5.4.2",
-    "element-plus": "2.3.6",
+    "element-plus": "2.3.7",
     "js-cookie": "^3.0.5",
     "lodash": "^4.17.21",
     "nprogress": "^0.2.0",
