@@ -88,6 +88,7 @@
 import { omit } from 'lodash'
 
 import { isFunction } from '@/utils/type'
+import { PropType } from 'vue'
 
 export default defineComponent({
   name: 'UserAccountContainerLayout',
@@ -106,7 +107,7 @@ export default defineComponent({
       default: ''
     },
     actionList: {
-      type: Array,
+      type: Array as PropType<Array<any>>,
       default () {
         return []
       },
@@ -120,7 +121,7 @@ export default defineComponent({
       required: true
     },
     formConfig: {
-      type: Array,
+      type: Array as PropType<Array<any>>,
       default () {
         return []
       },
@@ -286,7 +287,7 @@ export default defineComponent({
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (width <= 600px) {
 
   .user-account-container-layout {
     width: 95%;

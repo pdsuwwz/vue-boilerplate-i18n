@@ -51,7 +51,7 @@ export const useResultStore = defineStore('Result', {
       }
 
       return this.filterResponse(res, ({ data }) => {
-        this.overviewData = data
+        this.overviewData = data!
       }, () => {})
     }
   }
