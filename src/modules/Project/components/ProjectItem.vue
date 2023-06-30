@@ -75,6 +75,8 @@ import { Loading } from '@element-plus/icons-vue'
 
 import { sleep } from '@/utils/request'
 import { ElMessage } from 'element-plus'
+import { PropType } from 'vue'
+import { ProjectDetailProps } from '../store'
 
 // TODO: Hide it temporarily
 // import ProjectModule from '@/modules/Project/store'
@@ -86,12 +88,19 @@ export default defineComponent({
   },
   props: {
     dataset: {
-      type: Object,
+      type: Object as PropType<ProjectDetailProps>,
       default () {
-        return {}
+        return {
+          corpName: '',
+          createTime: '',
+          id: '',
+          isPublished: false,
+          name: '',
+          notes: ''
+        }
       }
     }
-  } as const,
+  },
   setup (props) {
     const { proxy } = useCurrentInstance()
     const isLoading = ref(false)
