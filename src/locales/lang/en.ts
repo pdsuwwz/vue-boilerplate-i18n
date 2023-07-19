@@ -5,7 +5,9 @@ export default {
   base: {
     systemTitle: systemTitle,
     goback: 'Back to the previous page',
-    empty: 'No data available'
+    empty: 'No data available',
+    i18nTest: 'Test internationalization',
+    pleaseInput: 'Please Input'
   },
   login: {
     hydl: 'Hi, Welcome',
@@ -23,7 +25,9 @@ export default {
   project: {
     manageTitle: 'Project management',
     create: 'New Project',
-    name: 'Project name',
+    name: 'Project Name',
+    corpName: 'Corporation Name',
+    notes: 'Remark',
     createDate: 'Create date',
     state: 'State',
     publish: 'Publish',

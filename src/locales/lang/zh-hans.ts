@@ -3,7 +3,9 @@ export default {
   base: {
     systemTitle: 'i18n 启动项目',
     goback: '返回',
-    empty: '无可用数据'
+    empty: '无可用数据',
+    i18nTest: '测试国际化',
+    pleaseInput: '请输入'
   },
   login: {
     hydl: '欢迎登录',
@@ -22,6 +24,8 @@ export default {
     manageTitle: '项目管理',
     create: '创建项目',
     name: '项目名称',
+    corpName: '公司名称',
+    notes: '备注',
     createDate: '创建日期',
     state: '状态',
     publish: '发布',
