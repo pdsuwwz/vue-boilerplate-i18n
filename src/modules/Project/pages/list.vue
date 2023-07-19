@@ -29,8 +29,10 @@
         flex-content
       >
         <template #head>
-          <SearchCorporation
-            @select="handleSelectSearch"
+          <el-date-picker
+            :start-placeholder="_t('base.i18nTest')"
+            :end-placeholder="_t('base.i18nTest')"
+            type="datetimerange"
           />
         </template>
 
@@ -81,7 +83,7 @@ export default defineComponent({
       proxy.$ModalDialog({
         title: localeInject.t('project.create'),
         top: '10vh',
-        width: '50vw',
+        width: '70vw',
         showClose: true,
         closeOnClickModal: false,
         closeOnPressEscape: false,
