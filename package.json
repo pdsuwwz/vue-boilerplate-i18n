@@ -78,7 +78,7 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitest/coverage-c8": "^0.33.0",
     "@vue/compiler-sfc": "^3.3.4",
-    "@vue/test-utils": "2.4.0",
+    "@vue/test-utils": "2.4.1",
     "babel-plugin-transform-vite-meta-env": "^1.0.3",
     "cross-env": "^7.0.3",
     "eslint": "^8.45.0",
