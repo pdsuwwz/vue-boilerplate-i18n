@@ -9,7 +9,6 @@ declare module 'vue' {
   export interface GlobalComponents {
     404: typeof import('./src/components/404.vue')['default']
     Avatar: typeof import('./src/components/Navigation/Avatar.vue')['default']
-    DialogModal: typeof import('./src/components/DialogModal/index.vue')['default']
     ElAutocomplete: typeof import('element-plus/es')['ElAutocomplete']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
