@@ -73,6 +73,8 @@
 <script lang="ts">
 import { Loading } from '@element-plus/icons-vue'
 
+import { useI18n } from 'vue-i18n'
+
 import { sleep } from '@/utils/request'
 import { ElMessage } from 'element-plus'
 import { PropType } from 'vue'
@@ -103,6 +105,8 @@ export default defineComponent({
   },
   setup (props) {
     const { proxy } = useCurrentInstance()
+    const localeInject = useI18n()
+
     const isLoading = ref(false)
     const getActionIcon = computed(() => {
       return props.dataset.isPublished
@@ -130,9 +134,15 @@ export default defineComponent({
       // TODO: Hide it temporarily
       // if (error) return
 
-      ElMessage.success({
-        message: 'Successful!'
-      })
+      if (props.dataset.isPublished) {
+        ElMessage.info(
+          localeInject.t('project.publishingStop')
+        )
+      } else {
+        ElMessage.success(
+          localeInject.t('project.publishedSuccessfully')
+        )
+      }
 
       props.dataset.isPublished = !props.dataset.isPublished
     }
