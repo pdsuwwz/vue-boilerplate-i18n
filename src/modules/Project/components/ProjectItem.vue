@@ -70,7 +70,7 @@
   </router-link>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { Loading } from '@element-plus/icons-vue'
 
 import { useI18n } from 'vue-i18n'
@@ -83,77 +83,69 @@ import { ProjectDetailProps } from '../store'
 // TODO: Hide it temporarily
 // import ProjectModule from '@/modules/Project/store'
 
-export default defineComponent({
-  name: 'ProjectItem',
-  components: {
-    Loading
-  },
-  props: {
-    dataset: {
-      type: Object as PropType<ProjectDetailProps>,
-      default () {
-        return {
-          corpName: '',
-          createTime: '',
-          id: '',
-          isPublished: false,
-          name: '',
-          notes: ''
-        }
+defineOptions({
+  name: 'ProjectItem'
+})
+
+const props = defineProps({
+  dataset: {
+    type: Object as PropType<ProjectDetailProps>,
+    default () {
+      return {
+        corpName: '',
+        createTime: '',
+        id: '',
+        isPublished: false,
+        name: '',
+        notes: ''
       }
-    }
-  },
-  setup (props) {
-    const { proxy } = useCurrentInstance()
-    const localeInject = useI18n()
-
-    const isLoading = ref(false)
-    const getActionIcon = computed(() => {
-      return props.dataset.isPublished
-        ? 'iconstop'
-        : 'iconplay'
-    })
-
-    async function handlePublish (projectId) {
-      if (isLoading.value) return
-
-      isLoading.value = true
-
-      await sleep(300)
-
-      // TODO: Hide it temporarily
-      // const { error } = await this.$store.dispatch(
-      //   ProjectModule.getAction('updateTogglePublishStatus'),
-      //   {
-      //     projectId
-      //   }
-      // )
-
-      isLoading.value = false
-
-      // TODO: Hide it temporarily
-      // if (error) return
-
-      if (props.dataset.isPublished) {
-        ElMessage.info(
-          localeInject.t('project.publishingStop')
-        )
-      } else {
-        ElMessage.success(
-          localeInject.t('project.publishedSuccessfully')
-        )
-      }
-
-      props.dataset.isPublished = !props.dataset.isPublished
-    }
-    return {
-      isLoading,
-      getActionIcon,
-
-      handlePublish
     }
   }
 })
+
+const { proxy } = useCurrentInstance()
+const localeInject = useI18n()
+
+const isLoading = ref(false)
+const getActionIcon = computed(() => {
+  return props.dataset.isPublished
+    ? 'iconstop'
+    : 'iconplay'
+})
+
+async function handlePublish (projectId) {
+  if (isLoading.value) return
+
+  isLoading.value = true
+
+  await sleep(300)
+
+  // TODO: Hide it temporarily
+  // const { error } = await this.$store.dispatch(
+  //   ProjectModule.getAction('updateTogglePublishStatus'),
+  //   {
+  //     projectId
+  //   }
+  // )
+
+  isLoading.value = false
+
+  // TODO: Hide it temporarily
+  // if (error) return
+
+  if (props.dataset.isPublished) {
+    ElMessage.info(
+      localeInject.t('project.publishingStop')
+    )
+  } else {
+    ElMessage.success(
+      localeInject.t('project.publishedSuccessfully')
+    )
+  }
+
+  props.dataset.isPublished = !props.dataset.isPublished
+}
+
 </script>
 
 <style lang="scss" scoped>
