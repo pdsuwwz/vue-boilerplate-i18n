@@ -300,6 +300,11 @@
     "watchTriggerable": true,
     "watchWithFilter": true,
     "whenever": true,
-    "WritableComputedRef": true
+    "WritableComputedRef": true,
+    "ExtractDefaultPropTypes": true,
+    "ExtractPropTypes": true,
+    "ExtractPublicPropTypes": true,
+    "injectLocal": true,
+    "provideLocal": true
   }
 }
