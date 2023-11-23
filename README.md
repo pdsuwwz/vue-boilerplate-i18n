@@ -5,9 +5,9 @@
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/vue-boilerplate-i18n?color=blue)](https://github.com/pdsuwwz/vue-boilerplate-i18n/blob/main/LICENSE)
 
-🌏 Starter using Vite 4 + Vue 3 + Pinia + TypeScript + i18n + Unplugin + Element-Plus 2.x to fast build a prototyping
+🌏 Starter using Vite 5 + Vue 3.3 + Pinia + TypeScript + i18n + Unplugin + Element-Plus 2.x to fast build a prototyping
 
-一个适用国际化多语言(i18n)扩展、帮助你快速开发 B 端 🚀🚀🚀 Vue3 + Vite4 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
+一个适用国际化多语言(i18n)扩展、帮助你快速开发 B 端 🚀🚀🚀 Vue3 + Vite5 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
 
 
 __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
@@ -18,12 +18,12 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 
 (推荐基于在[当前仓库](https://github.com/pdsuwwz/vue-boilerplate-i18n/generate)基础上二次开发)
 
-- 💥 (推荐) [TS + Pinia + 🌐 低耦合(i18n)多语言 Vite4 + Vue3 + TS + Pinia + Element-Plus2 + vue-i18n@next](https://github.com/pdsuwwz/vue-boilerplate-i18n)
+- 💥 (推荐) [TS + Pinia + 🌐 低耦合(i18n)多语言 Vite5 + Vue3 + TS + Pinia + Element-Plus2 + vue-i18n@next](https://github.com/pdsuwwz/vue-boilerplate-i18n)
 
 - ⚡️ TS + Pinia 版 [Vite4 + Vue3 + TS + Pinia + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/pinia-starter-ts)
 - ⚡️ JS + Pinia 版 [Vite4 + Vue3 + Pinia + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-pinia-starter)
 
-- ⚡️ TS + Vuex4 版 [Vite4 + Vue3 + TS + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-ts-starter)
+- ⚡️ TS + Vuex4 版 [Vite5 + Vue3 + TS + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-ts-starter)
 - ⚡️ JS + Vuex4 版 [Vite4 + Vue3 + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-starter)
 
 
@@ -37,7 +37,7 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 
 ## 🎉 Features
 
-* 支持 __Vite 4 + Vue 3 + TypeScript__
+* 支持 __Vite 5 + Vue 3 + TypeScript__
 * UI 框架: __Element Plus 2.x__
 * 状态管理: __Pinia__
 * 单元测试框架: ~~__Jest__~~ 升级为 __Vitest__
