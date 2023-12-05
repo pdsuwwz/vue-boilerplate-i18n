@@ -1,13 +1,3 @@
-/*
- * @Author: pdsuwwz pdsu.wwz@foxmail.com
- * @Date: 2022-01-09 19:11:21
- * @LastEditors: pdsuwwz pdsu.wwz@foxmail.com
- * @LastEditTime: 2022-08-15 14:30:49
- * @FilePath: /vue-boilerplate-i18n/src/modules/Project/store/index.ts
- * @Description:
- *
- * Copyright (c) 2022 by pdsuwwz pdsu.wwz@foxmail.com, All Rights Reserved.
- */
 import { defineStore } from 'pinia'
 
 import { sleep } from '@/utils/request'
@@ -82,9 +72,18 @@ export const useProjectStore = defineStore('Project', {
         error: 0,
         data: {}
       }
-      await sleep(1000)
+      await sleep(600)
       return this.filterResponse(res, () => {
-        this.projectList.push(JSON.parse(JSON.stringify(projectDetail)))
+        const date = new Date()
+        const [, id] = String(Math.random()).split('.')
+        this.projectList.push({
+          id,
+          name: params.name,
+          corpName: params.corpName,
+          notes: params.notes,
+          isPublished: false,
+          createTime: `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`
+        })
       })
     },
     async updateTogglePublishStatus ({ commit }, params) {
@@ -93,3 +92,4 @@ export const useProjectStore = defineStore('Project', {
     }
   }
 })
+
