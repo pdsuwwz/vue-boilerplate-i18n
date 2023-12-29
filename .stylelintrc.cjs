@@ -12,15 +12,10 @@ module.exports = {
       "rem",
       "pt"
     ],
-    "indentation": 2,
     "no-empty-source": null,
     "block-no-empty": null,
+    'declaration-block-no-duplicate-custom-properties': null,
     "font-family-no-missing-generic-family-keyword": null,
-
-    "block-closing-brace-newline-after": "always-multi-line",
-    "block-opening-brace-newline-before": "always-single-line",
-    "block-opening-brace-newline-after": "always",
-    "block-closing-brace-newline-before": "always",
 
     "selector-class-pattern": "^[a-z]([a-z0-9-]+)?(__([a-z0-9]+-?)+)?(__([a-z0-9]+-?)+)?(--([a-z0-9]+-?)+){0,2}$|^Mui.*$|^([a-z][a-z0-9]*)(_[a-z0-9]+)*$",
 
@@ -28,6 +23,16 @@ module.exports = {
     "scss/double-slash-comment-whitespace-inside": "always",
     "scss/dollar-variable-pattern": null,
 
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "export",
+          "deep"
+        ]
+      }
+    ],
+    "property-no-unknown": null,
     "at-rule-empty-line-before": [
       "always",
       {
@@ -46,7 +51,6 @@ module.exports = {
         "except": ["after-declaration", "first-nested"]
       }
     ],
-    "block-closing-brace-empty-line-before": "never",
     "rule-empty-line-before": ["always-multi-line"],
 
     // 忽视 -webkit-xxxx 等兼容写法
