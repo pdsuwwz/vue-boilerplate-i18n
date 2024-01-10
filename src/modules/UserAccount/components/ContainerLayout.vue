@@ -48,20 +48,25 @@
               v-if="formItem.prefixIcon"
               #prefix
             >
-              <FontAwesomeIcon
+              <component
+                :is="formItem.prefixIcon"
                 class="input-icon-prefix"
-                :icon="formItem.prefixIcon"
               />
             </template>
             <template
               v-if="formItem.type === 'password'"
               #suffix
             >
-              <FontAwesomeIcon
-                class="input-icon-lock"
-                :icon="showPassword ? 'eye' : 'eye-slash'"
-                @click="tooglePassword()"
-              />
+              <div class="flex items-center cursor-pointer">
+                <AutoIconPheyeBold
+                  v-if="showPassword"
+                  @click="tooglePassword()"
+                />
+                <AutoIconPheyeSlashBold
+                  v-else
+                  @click="tooglePassword()"
+                />
+              </div>
             </template>
           </el-input>
         </el-form-item>
@@ -84,8 +89,6 @@
 </template>
 
 <script lang="ts">
-
-import { omit } from 'lodash'
 
 import { isFunction } from '@/utils/type'
 import { PropType } from 'vue'
@@ -162,7 +165,7 @@ export default defineComponent({
 
       return {
         rules,
-        ...omit(attrs, ['rules'])
+        ..._.omit(attrs, ['rules'])
       }
     }
 

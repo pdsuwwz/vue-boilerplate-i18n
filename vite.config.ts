@@ -2,8 +2,14 @@ import path from 'path'
 import { defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 
+import UnoCSS from 'unocss/vite'
+
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+
+import UnpluginIcons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 import FullImportPlugin from './build/fullImportPlugin'
@@ -26,6 +32,7 @@ export default defineConfig(({ mode }) => {
       ? ''
       : '/',
     plugins: [
+      UnoCSS(),
       vue(),
       AutoImport({
         include: [
@@ -52,7 +59,7 @@ export default defineConfig(({ mode }) => {
               ['v4', 'uuidv4']
             ],
             // 全局使用 _.xxxx()
-            'lodash': [
+            'lodash-es': [
               // default imports
               ['*', '_'] // import { * as _ } from 'lodash-es',
             ]
@@ -96,15 +103,26 @@ export default defineConfig(({ mode }) => {
         },
         vueTemplate: true
       }),
-      mode === 'development'
-        ? FullImportPlugin()
-        : Components({
-          resolvers: [
-            ElementPlusResolver({
-              importStyle: 'sass'
-            })
-          ]
-        }),
+      Components({
+        directoryAsNamespace: true,
+        collapseSamePrefixes: true,
+        resolvers: [
+          IconsResolver({
+            prefix: 'AutoIcon'
+          }),
+          ElementPlusResolver({
+            importStyle: 'sass'
+          })
+        ]
+      }),
+      // Auto use Iconify icon
+      UnpluginIcons({
+        autoInstall: true,
+        compiler: 'vue3',
+        scale: 1.2,
+        defaultStyle: '',
+        defaultClass: 'unplugin-icon'
+      }),
       htmlPlugin()
     ],
     // https://esbuild.github.io/api/#drop

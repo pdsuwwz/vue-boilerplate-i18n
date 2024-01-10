@@ -77,7 +77,6 @@ import { useI18n } from 'vue-i18n'
 
 import { sleep } from '@/utils/request'
 import { ElMessage } from 'element-plus'
-import { PropType } from 'vue'
 import { ProjectDetailProps } from '../store'
 
 // TODO: Hide it temporarily

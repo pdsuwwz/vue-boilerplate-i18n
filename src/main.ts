@@ -1,10 +1,12 @@
+import 'virtual:uno.css'
+
 import { setupRouter } from '@/router'
 import { setupStore } from '@/store'
 import { setupI18n } from '@/locales'
 
 import App from '@/App.vue'
 
-import Fonts from '@/assets/fonts'
+import '@/assets/fonts'
 
 import GlobalComponents from '@/components'
 import Mixin from '@/mixins'
@@ -16,7 +18,6 @@ function setupPlugins() {
   app
     .use(GlobalComponents)
     .use(Widgets)
-    .use(Fonts)
     .mixin(Mixin)
 }
 
