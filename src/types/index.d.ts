@@ -8,8 +8,6 @@ import {
   requiredRadioRules
 } from '@/utils/formRules'
 
-import router from '@/router'
-
 // $ModalDialog
 declare module 'vue' {
   export interface VNode {
@@ -50,7 +48,6 @@ declare module 'pinia' {
    */
   export interface PiniaCustomProperties {
     filterResponse: typeof getFilterResponse
-    router: typeof router
   }
 }
 
