@@ -8,12 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     404: typeof import('./src/components/404.vue')['default']
-    AutoIconIcBaselineTranslate: typeof import('~icons/ic/baseline-translate')['default']
-    AutoIconLogosVitejs: typeof import('~icons/logos/vitejs')['default']
     AutoIconPheyeBold: typeof import('~icons/ph/eye-bold')['default']
     AutoIconPheyeSlashBold: typeof import('~icons/ph/eye-slash-bold')['default']
-    AutoIconRiTranslate: typeof import('~icons/ri/translate')['default']
-    AutoIconTeenyiconsSigninSolid: typeof import('~icons/teenyicons/signin-solid')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElDatePicker: typeof import('element-plus/es')['ElDatePicker']
