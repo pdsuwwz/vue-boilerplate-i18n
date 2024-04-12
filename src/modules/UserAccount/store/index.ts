@@ -3,9 +3,9 @@ import { store } from '@/store'
 
 import { sleep } from '@/utils/request'
 import {
+  getUserInfoData,
   login,
   logout,
-  getUserInfoData,
   updateChangeLanguage
 } from '@/modules/UserAccount/api'
 import { changeLocale } from '@/locales/useLocale'
