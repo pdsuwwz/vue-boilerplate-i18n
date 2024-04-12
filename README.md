@@ -54,16 +54,18 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 * 节省你配置的时间，因此该项目的**轻量化**致使你只需要专心编写自己的业务代码即可
 
 
+## Environment Support
+
+* Vue 3.2.x
+* Node >= 16.15.x
+* **VS Code 插件 `dbaeumer.vscode-eslint` >= v3.0.5 (pre-release)**
+
+
 ## Screenshot
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/19891724/154831095-32a64eee-01ce-49be-ad64-626f0d276559.png">
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/19891724/168773776-2d43c03d-54dd-4364-8830-0bba65603ef4.png">
 
-
-## Environment Support
-
-* Vue 3.2.x
-* Node >= 16.15.x
 
 ## Install
 
