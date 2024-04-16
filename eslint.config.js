@@ -1,25 +1,27 @@
 // import antfu from '@antfu/eslint-config'
 // export default antfu()
 
-import { defineFlatConfig } from 'eslint-define-config';
+import globals from 'globals'
+import { defineFlatConfig } from 'eslint-define-config'
 
-import * as parserTypeScript from '@typescript-eslint/parser';
-import pluginTypeScript from '@typescript-eslint/eslint-plugin';
+import * as parserTypeScript from '@typescript-eslint/parser'
+import pluginTypeScript from '@typescript-eslint/eslint-plugin'
 
-import * as parserVue from 'vue-eslint-parser';
-import pluginVue from 'eslint-plugin-vue';
-import js from '@eslint/js';
+import * as parserVue from 'vue-eslint-parser'
+import pluginVue from 'eslint-plugin-vue'
+import js from '@eslint/js'
+
 
 function renameRules(rules, map) {
   return Object.fromEntries(
     Object.entries(rules).map(([key, value]) => {
       for (const [from, to] of Object.entries(map)) {
         if (key.startsWith(`${from}/`))
-          return [to + key.slice(from.length), value];
+          return [to + key.slice(from.length), value]
       }
-      return [key, value];
+      return [key, value]
     })
-  );
+  )
 }
 
 export default defineFlatConfig([
@@ -31,7 +33,10 @@ export default defineFlatConfig([
       globals: {
         document: 'readonly',
         navigator: 'readonly',
-        window: 'readonly'
+        window: 'readonly',
+        ...globals.node,
+        ...globals.es2021,
+        ...globals.browser
       },
       parserOptions: {
         ecmaFeatures: {
@@ -50,7 +55,7 @@ export default defineFlatConfig([
       'constructor-super': 'error',
       'default-case-last': 'error',
       'dot-notation': ['error', { allowKeywords: true }],
-      'eqeqeq': ['error', 'smart'],
+      'eqeqeq': ['error', 'always'],
       'new-cap': ['error', { capIsNew: false, newIsCap: true, properties: true }],
       'no-alert': 'error',
       'no-array-constructor': 'error',
@@ -160,6 +165,9 @@ export default defineFlatConfig([
       'no-useless-return': 'error',
       'no-var': 'error',
       'no-with': 'error',
+      'key-spacing': 'error',
+      'space-infix-ops': 'error',
+      'object-curly-spacing': ['error', 'always'],
       'object-shorthand': [
         'error',
         'always',
@@ -234,6 +242,11 @@ export default defineFlatConfig([
           jsx: true
         }
       }
+    },
+    settings: {
+      'import/core-modules': [
+        'uno.css'
+      ]
     },
     plugins: {
       '@typescript-eslint': pluginTypeScript
@@ -321,4 +334,4 @@ export default defineFlatConfig([
       }]
     }
   }
-]);
+])
