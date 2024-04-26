@@ -52,7 +52,7 @@
     "@vueuse/core": "^10.9.0",
     "axios": "1.6.8",
     "echarts": "^5.5.0",
-    "element-plus": "2.7.1",
+    "element-plus": "2.7.2",
     "js-cookie": "^3.0.5",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",

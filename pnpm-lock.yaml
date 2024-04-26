@@ -21,8 +21,8 @@ importers:
         specifier: ^5.5.0
         version: 5.5.0
       element-plus:
-        specifier: 2.7.1
-        version: 2.7.1(vue@3.4.25(typescript@5.4.5))
+        specifier: 2.7.2
+        version: 2.7.2(vue@3.4.25(typescript@5.4.5))
       js-cookie:
         specifier: ^3.0.5
         version: 3.0.5
@@ -1841,8 +1841,8 @@ packages:
   electron-to-chromium@1.4.748:
     resolution: {integrity: sha512-VWqjOlPZn70UZ8FTKUOkUvBLeTQ0xpty66qV0yJcAGY2/CthI4xyW9aEozRVtuwv3Kpf5xTesmJUcPwuJmgP4A==}
 
-  element-plus@2.7.1:
-    resolution: {integrity: sha512-yk/vXFwJp0flMrd2kfcR0XlumhwtPjB19HJvwcf0n3DvRE7UK8LeSK14LVghSzk0TzPsFFElweMnZEEv7+MYuQ==}
+  element-plus@2.7.2:
+    resolution: {integrity: sha512-AdEzBU/A68iUleio0MkQ46JeU5SeQvFFd915GJFScJmUEo5AmYg3OQ4pVjcu+p3b3Nupg9MC5Wa4xjAiC51kUg==}
     peerDependencies:
       vue: ^3.2.0
 
@@ -5465,7 +5465,7 @@ snapshots:
 
   electron-to-chromium@1.4.748: {}
 
-  element-plus@2.7.1(vue@3.4.25(typescript@5.4.5)):
+  element-plus@2.7.2(vue@3.4.25(typescript@5.4.5)):
     dependencies:
       '@ctrl/tinycolor': 3.6.1
       '@element-plus/icons-vue': 2.3.1(vue@3.4.25(typescript@5.4.5))
