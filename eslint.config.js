@@ -26,8 +26,17 @@ function renameRules(rules, map) {
 
 export default defineFlatConfig([
   {
+    ignores: [
+      'public',
+      'build',
+      'dist',
+      'node_modules',
+      'coverage',
+      'src/assets/**'
+    ]
+  },
+  {
     ...js.configs.recommended,
-    ignores: ['public', 'build', 'dist', 'node_modules', 'coverage', 'src/assets/**'],
     languageOptions: {
       ecmaVersion: 2022,
       globals: {
