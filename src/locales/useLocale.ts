@@ -27,7 +27,7 @@ export async function changeLocale(locale) {
     return locale
   }
 
-  const langModule = await import(`./lang/${locale}.ts`)
+  const langModule = await import(`./lang/${ locale }.ts`)
   if (!langModule) return
 
   globalI18n.setLocaleMessage(locale, langModule.default ?? {})

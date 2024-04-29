@@ -5,7 +5,7 @@ import { allowlist } from '@/router/auth-list'
 import { systemTitle } from '@/locales/data'
 
 import NProgress from 'nprogress'
-import { Router } from 'vue-router'
+import type { Router } from 'vue-router'
 import { changeLocale } from '@/locales/useLocale'
 
 NProgress.configure({
@@ -18,7 +18,7 @@ export function createRouterGuards(router: Router) {
 
     NProgress.start()
 
-    document.title = `${to.meta.title || ''} - ${systemTitle}`
+    document.title = `${ to.meta.title || '' } - ${ systemTitle }`
 
     console.log('😄😄😄 ', to)
 
@@ -34,7 +34,7 @@ export function createRouterGuards(router: Router) {
     }
 
     if (!Cookie.get('token')) {
-      next(`/${currentRouteLocale || userAccountStore.locale}/user/login`)
+      next(`/${ currentRouteLocale || userAccountStore.locale }/user/login`)
       return
     }
 
@@ -46,7 +46,7 @@ export function createRouterGuards(router: Router) {
       const _locale = changeLocale(
         currentRouteLocale || userAccountStore.locale
       )
-      next(`/${_locale}/user/login`)
+      next(`/${ _locale }/user/login`)
       return
     }
 
