@@ -1,5 +1,5 @@
 import { ElMessage } from 'element-plus'
-import { RespData } from '@/utils/request'
+import type { RespData } from '@/utils/request'
 
 type ResponseCallback<T> = (res: RespData<T>) => (typeof res) | any
 

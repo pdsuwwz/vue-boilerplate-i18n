@@ -17,7 +17,7 @@ async function createI18nOptions() {
   console.log('🍌', 'createI18nOptions')
   const userAccountStore = useUserAccountStoreWithOut()
   const locale = userAccountStore.locale
-  const defaultLocal = await import(`./lang/${locale}.ts`)
+  const defaultLocal = await import(`./lang/${ locale }.ts`)
   const message = defaultLocal.default ?? {}
 
   return {

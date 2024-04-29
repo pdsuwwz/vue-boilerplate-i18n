@@ -107,7 +107,9 @@ export default defineComponent({
               }
             },
             label: localeInject.t('login.email'),
-            prefixIcon: h('span', { class: 'text-16px i-ic:baseline-mail-lock' }),
+            prefixIcon: h('span', {
+              class: 'text-16px i-ic:baseline-mail-lock'
+            }),
             placeholder: localeInject.t('login.plsemail')
           },
           {
@@ -129,7 +131,9 @@ export default defineComponent({
             },
             type: 'password',
             label: localeInject.t('login.pwd'),
-            prefixIcon: h('span', { class: 'text-16px i-ri:lock-password-fill' }),
+            prefixIcon: h('span', {
+              class: 'text-16px i-ri:lock-password-fill'
+            }),
             placeholder: localeInject.t('login.plspwd')
           }
         ]
@@ -159,7 +163,7 @@ export default defineComponent({
 
         Cookie.set('token', data!.user.token)
         router
-          .replace(`/${route.params.locale || ''}`)
+          .replace(`/${ route.params.locale || '' }`)
           .then(() => {
             ElMessage({
               type: 'success',
