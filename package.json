@@ -15,7 +15,8 @@
     "test": "vitest",
     "test:coverage": "vitest run --coverage",
     "stylelint": "stylelint .scss, .vue ./src",
-    "stylelint:fix": "stylelint --fix .scss, .vue ./src"
+    "stylelint:fix": "stylelint --fix .scss, .vue ./src",
+    "prepare": "husky"
   },
   "engines": {
     "node": ">= 16.15.x",
@@ -89,6 +90,7 @@
     "globals": "^15.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jsdom": "^24.0.0",
+    "lint-staged": "^15.2.2",
     "lodash-es": "^4.17.21",
     "postcss": "^8.4.38",
     "postcss-html": "^1.6.0",

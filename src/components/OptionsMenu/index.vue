@@ -155,10 +155,7 @@ export default {
   &::after {
     content: "";
     position: absolute;
-    top: -6px;
-    left: -6px;
-    right: -6px;
-    bottom: -6px;
+    inset: -6px;
   }
 
   &.hide-border {
@@ -186,10 +183,7 @@ export default {
 <style lang="scss">
 .global-options-menu-backdrop-mask {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
   z-index: 1;
 
   &.hide {
