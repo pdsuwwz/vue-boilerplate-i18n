@@ -1,3 +1,6 @@
+// import antfu from '@antfu/eslint-config'
+// export default antfu()
+
 import globals from 'globals'
 import { defineFlatConfig } from 'eslint-define-config'
 
@@ -121,7 +124,7 @@ export default defineFlatConfig([
       'no-compare-neg-zero': 'error',
       'no-cond-assign': ['error', 'always'],
       'no-console': ['error', {
-        allow: ['log', 'dir', 'warn', 'error']
+        allow: ['log', 'warn', 'error']
       }],
       'no-const-assign': 'error',
       'no-control-regex': 'error',
