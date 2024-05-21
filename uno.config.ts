@@ -1,5 +1,6 @@
 import {
   defineConfig,
+  presetAttributify,
   presetIcons,
   presetUno,
   transformerDirectives
@@ -8,6 +9,7 @@ import {
 export default defineConfig({
   presets: [
     presetUno(),
+    presetAttributify(),
     presetIcons()
   ],
   transformers: [
@@ -27,6 +29,14 @@ export default defineConfig({
     [
       'login-navbar-shadow', {
         'box-shadow': '0 -3px 8px 3px #727272'
+      }
+    ],
+    [
+      /^bgimage-(\w+)-(.+)-(svg|png|jpg|gif)$/,
+      ([, dir, fname, fext]) => {
+        return {
+          'background-image': `url(@/assets/${ dir }/${ fname }.${ fext })`
+        }
       }
     ]
   ]

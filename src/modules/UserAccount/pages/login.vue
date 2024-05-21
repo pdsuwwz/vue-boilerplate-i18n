@@ -1,8 +1,20 @@
 <template>
-  <div class="user-account-login">
+  <div
+    class="user-account-login"
+    :class="[
+      'bgimage-images-logo-background-jpg',
+      'bg-no-repeat bg-cover'
+    ]"
+  >
     <div class="user-account-nav">
       <div class="nav-left">
-        <div class="nav-logo"></div>
+        <div
+          class="nav-logo"
+          :class="[
+            'bgimage-images-i18n-svg',
+            'bg-no-repeat bg-contain bg-center',
+          ]"
+        ></div>
         <div class="nav-circle"></div>
         <div class="nav-title">
           {{ _t('base.systemTitle') }}
@@ -31,7 +43,7 @@
         </template>
       </UserAccountContainerLayout>
     </div>
-    <MyFooter />
+    <FooterCustom />
   </div>
 </template>
 
@@ -203,9 +215,6 @@ export default defineComponent({
   flex-direction: column;
   min-height: 100vh;
   background-color: #f0f2f5;
-  background-image: url("@/assets/images/logo-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 
   .user-account-nav {
     display: flex;
@@ -229,10 +238,6 @@ export default defineComponent({
       width: 32px;
       height: 32px;
       border-radius: 3px;
-      background-image: url("@/assets/images/i18n.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
     }
 
     .nav-circle {
