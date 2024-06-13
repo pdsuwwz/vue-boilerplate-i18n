@@ -58,8 +58,8 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 ## 前置条件
 
 * Vue 3.2.x
-* Node >= 16.15.x
-* Pnpm 8.x
+* Node >= 18.12.x
+* Pnpm 9.x
 * **VS Code 插件 `dbaeumer.vscode-eslint` >= v3.0.5 (pre-release)**
 
 
