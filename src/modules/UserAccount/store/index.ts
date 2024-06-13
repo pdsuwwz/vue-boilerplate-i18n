@@ -48,7 +48,7 @@ export const useUserAccountStore = defineStore('UserAccount', {
       this.locale = data.locale
     },
     async login (data) {
-      await sleep(340)
+      await sleep(100)
       const res = await login(data)
       return this.filterResponse(res, null, () => {})
     },
