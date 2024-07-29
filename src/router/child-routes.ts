@@ -80,14 +80,7 @@ const childrenRoutes: Array<RouteRecordRaw> = [
         component: importModule['../modules/Result/pages/overview.vue'],
         meta: {
           title: '总览'
-        },
-        children: [
-          {
-            path: '',
-            name: 'ResultOverview',
-            component: importModule['../modules/Result/pages/overview.vue']
-          }
-        ]
+        }
       }
     ]
   }
