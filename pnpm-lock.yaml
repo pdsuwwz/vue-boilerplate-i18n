@@ -179,7 +179,7 @@ importers:
         version: 0.18.2(@vueuse/core@10.11.0(vue@3.4.34(typescript@5.5.4)))(rollup@4.19.1)
       unplugin-icons:
         specifier: ^0.19.0
-        version: 0.19.0(@vue/compiler-sfc@3.4.34)
+        version: 0.19.1(@vue/compiler-sfc@3.4.34)
       unplugin-vue-components:
         specifier: ^0.27.3
         version: 0.27.3(@babel/parser@7.25.0)(rollup@4.19.1)(vue@3.4.34(typescript@5.5.4))
@@ -1029,8 +1029,8 @@ packages:
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
 
-  '@iconify/utils@2.1.28':
-    resolution: {integrity: sha512-7tHIALKosS/Vz2i6cd91XXqvDbJ8qR4Oz0BFErJPECbwIQf5Fpj6MMDE7WMRRYZyxCwmdao1IKGciAMx7Xu6OQ==}
+  '@iconify/utils@2.1.29':
+    resolution: {integrity: sha512-wCcTsmlJvTi1VWBgcJ7HeuWlh7gLGWY7L9HmbgMfjOfsoo7DADemB2Nqnrw1KvCdEAxLL5wTMBAOP5BesFrtng==}
 
   '@iconify/vue@4.1.2':
     resolution: {integrity: sha512-CQnYqLiQD5LOAaXhBrmj1mdL2/NCJvwcC4jtW2Z8ukhThiFkLDkutarTOV2trfc9EXqUqRs0KqXOL9pZ/IyysA==}
@@ -3431,8 +3431,8 @@ packages:
       '@vueuse/core':
         optional: true
 
-  unplugin-icons@0.19.0:
-    resolution: {integrity: sha512-u5g/gIZPZEj1wUGEQxe9nzftOSqmblhusc+sL3cawIRoIt/xWpE6XYcPOfAeFTYNjSbRrX/3QiX89PFiazgU1w==}
+  unplugin-icons@0.19.1:
+    resolution: {integrity: sha512-a5I+wSOO5lsgc4dB2nEFaSZ4eEgQvSSR8tSR2jT69nTKiVmcK+PPU633zn2FyRf9i6vLapUiQ28GQStfzGURdg==}
     peerDependencies:
       '@svgr/core': '>=7.0.0'
       '@svgx/core': ^1.0.1
@@ -4650,7 +4650,7 @@ snapshots:
 
   '@iconify/types@2.0.0': {}
 
-  '@iconify/utils@2.1.28':
+  '@iconify/utils@2.1.29':
     dependencies:
       '@antfu/install-pkg': 0.1.1
       '@antfu/utils': 0.7.10
@@ -5042,7 +5042,7 @@ snapshots:
 
   '@unocss/preset-icons@0.61.6':
     dependencies:
-      '@iconify/utils': 2.1.28
+      '@iconify/utils': 2.1.29
       '@unocss/core': 0.61.6
       ofetch: 1.3.4
     transitivePeerDependencies:
@@ -7427,11 +7427,11 @@ snapshots:
     transitivePeerDependencies:
       - rollup
 
-  unplugin-icons@0.19.0(@vue/compiler-sfc@3.4.34):
+  unplugin-icons@0.19.1(@vue/compiler-sfc@3.4.34):
     dependencies:
       '@antfu/install-pkg': 0.3.3
       '@antfu/utils': 0.7.10
-      '@iconify/utils': 2.1.28
+      '@iconify/utils': 2.1.29
       debug: 4.3.6
       kolorist: 1.8.0
       local-pkg: 0.5.0
