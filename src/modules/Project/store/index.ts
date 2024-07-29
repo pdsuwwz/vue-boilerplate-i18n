@@ -52,7 +52,7 @@ export const useProjectStore = defineStore('Project', {
       return this.filterResponse(res, null, () => {})
     },
     async getProjectList(params = {}) {
-      await sleep(2000)
+      await sleep(500)
       // const res = await getProjectList(params)
       const res = {
         msg: 'ok',

@@ -26,7 +26,7 @@ import type { Placement } from 'element-plus'
 
 interface Props {
   content: string
-  placement: Placement
+  placement?: Placement
 }
 
 withDefaults(
