@@ -136,9 +136,13 @@ export default defineComponent({
               }
             },
             link: {
-              text: localeInject.t('login.fgtpwd'),
+              text: `${ localeInject.t('login.fgtpwd') }?`,
               click () {
                 console.log(proxy, localeInject.t('login.fgtpwd'))
+                ElMessage({
+                  type: 'success',
+                  message: localeInject.t('login.fgtpwd')
+                })
               }
             },
             type: 'password',
