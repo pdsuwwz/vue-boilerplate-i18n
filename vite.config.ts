@@ -166,6 +166,7 @@ export default defineConfig(({ mode }) => {
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler',
           additionalData: `@use '@/styles/element-variables.scss' as *;`
         }
       }

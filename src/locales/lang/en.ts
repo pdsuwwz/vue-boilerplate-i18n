@@ -15,7 +15,7 @@ export default {
     username: 'Username',
     email: 'Email',
     pwd: 'Password',
-    fgtpwd: 'Forgot password?',
+    fgtpwd: 'Forgot password',
     plsemail: 'Please enter a email',
     plscurrentemail: 'Please enter the correct email',
     plspwd: 'Please enter a password',
