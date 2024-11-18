@@ -32,6 +32,8 @@ export default defineFlatConfig([
       'build',
       'dist',
       'node_modules',
+      'auto-imports.d.ts',
+      'components.d.ts',
       'coverage',
       'src/assets/**'
     ]
@@ -373,6 +375,7 @@ export default defineFlatConfig([
       '@typescript-eslint/no-unused-vars': 1,
       '@typescript-eslint/no-empty-function': 0,
       '@typescript-eslint/no-non-null-assertion': 0,
+      '@typescript-eslint/no-unused-expressions': 0,
       '@typescript-eslint/consistent-type-imports': ['error', {
         fixStyle: 'separate-type-imports',
         disallowTypeAnnotations: false
