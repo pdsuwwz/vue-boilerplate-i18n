@@ -162,6 +162,7 @@
     "useCloned": true,
     "useColorMode": true,
     "useConfirmDialog": true,
+    "useCountdown": true,
     "useCounter": true,
     "useCssModule": true,
     "useCssVar": true,
