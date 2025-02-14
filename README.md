@@ -5,9 +5,9 @@
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/vue-boilerplate-i18n?color=blue)](https://github.com/pdsuwwz/vue-boilerplate-i18n/blob/main/LICENSE)
 
-🌏 Starter using Vite 5 + Vue 3.3 + Pinia + TypeScript + i18n + UnoCSS + Unplugin + Element-Plus 2.x to fast build a prototyping
+🌏 Starter using Vite 6 + Vue 3.x + Pinia 3.x + TypeScript + i18n + UnoCSS + Unplugin + Element-Plus 2.x to fast build a prototyping
 
-一个适用国际化多语言(i18n)扩展、帮助你快速开发 B 端 🚀🚀🚀 Vue3 + Vite5 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
+一个适用国际化多语言(i18n)扩展、帮助你快速开发 B 端 🚀🚀🚀 Vue3 + Vite6 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
 
 
 __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#/zh-hans)__
@@ -18,12 +18,12 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 
 (推荐基于在[当前仓库](https://github.com/pdsuwwz/vue-boilerplate-i18n/generate)基础上二次开发)
 
-- 💥 (推荐) [TS + Pinia + 🌐 低耦合(i18n)多语言 Vite5 + Vue3 + UnoCSS + Element-Plus2 + vue-i18n@next](https://github.com/pdsuwwz/vue-boilerplate-i18n)
+- 💥 (推荐) [TS + Pinia + 🌐 低耦合(i18n)多语言 Vite6 + Vue3 + UnoCSS + Element-Plus2 + vue-i18n@next](https://github.com/pdsuwwz/vue-boilerplate-i18n)
 
 - ⚡️ TS + Pinia 版 [Vite5 + Vue3 + TS + Pinia + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/pinia-starter-ts)
 - ⚡️ JS + Pinia 版 [Vite5 + Vue3 + Pinia + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-pinia-starter)
 
-- ⚡️ TS + Vuex4 版 [Vite5 + Vue3 + TS + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-ts-starter)
+- ⚡️ TS + Vuex4 版 [Vite6 + Vue3 + TS + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-ts-starter)
 - ⚡️ JS + Vuex4 版 [Vite5 + Vue3 + Vuex4 + Element-Plus2 + useLocale + i18n](https://github.com/pdsuwwz/vite-starter)
 
 
@@ -37,9 +37,9 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 
 ## 🎉 Features
 
-* 支持 __Vite 5 + Vue 3 + TypeScript__
+* 支持 __Vite 6 + Vue 3 + TypeScript__
 * UI 框架: __Element Plus 2.x__
-* 状态管理: __Pinia__
+* 状态管理: __Pinia 3.x__
 * 自动导入，解放双手: __Unplugin Auto Import__
 * 原子化 CSS: __UnoCSS__
 * 单元测试框架: __Vitest__
@@ -57,7 +57,7 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 
 ## 前置条件
 
-* Vue 3.2.x
+* Vue 3.5.x
 * Node >= 18.12.x
 * Pnpm 9.x
 * **VS Code 插件 `dbaeumer.vscode-eslint` >= v3.0.5 (pre-release)**
