@@ -5,7 +5,7 @@
 [![thanks](https://badgen.net/badge/thanks/♥/pink)](https://github.com/pdsuwwz)
 [![License](https://img.shields.io/github/license/pdsuwwz/vue-boilerplate-i18n?color=blue)](https://github.com/pdsuwwz/vue-boilerplate-i18n/blob/main/LICENSE)
 
-🌏 Starter using Vite 6 + Vue 3.x + Pinia 3.x + TypeScript + i18n + UnoCSS + Unplugin + Element-Plus 2.x to fast build a prototyping
+🌏 Starter using Vite 6 + Vue 3.x + Pinia 3.x + TypeScript + i18n + UnoCSS + Unplugin + Element-Plus 2.x + ESLint v9 to fast build a prototyping
 
 一个适用国际化多语言(i18n)扩展、帮助你快速开发 B 端 🚀🚀🚀 Vue3 + Vite6 + TS + Pinia 中小型后台管理系统的原型模板项目框架，集成 vue-i18n-next 💪
 
@@ -44,7 +44,7 @@ __[💻 Live Demo 在线体验](https://pdsuwwz.github.io/vue-boilerplate-i18n/#
 * 原子化 CSS: __UnoCSS__
 * 单元测试框架: __Vitest__
 * 代码规范化检测: __Husky + lint-staged__
-* 内置 __ESlint__ 和 __Stylelint__, 可在此基础上扩充你想要的 Lint 配置规范
+* 内置 __ESlint(v9)__ 和 __Stylelint__, 可在此基础上扩充你想要的 Lint 配置规范
 * 内置封装了一个**可能比较好用的** Axios , 需要时配合 Pinia Actions 一起食用
 * 封装了 \<IconFont \/> 组件, 可直接使用 IconFont 图标
 * 内置全局 **$ModalDialog** 插件, 支持使用 service 式地动态调用此插件来显示任意组件

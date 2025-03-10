@@ -2,7 +2,7 @@
 // export default antfu()
 
 import globals from 'globals'
-import { defineFlatConfig } from 'eslint-define-config'
+import { defineConfig } from 'eslint/config'
 
 import * as parserTypeScript from '@typescript-eslint/parser'
 import pluginTypeScript from '@typescript-eslint/eslint-plugin'
@@ -25,7 +25,7 @@ function renameRules(rules, map) {
   )
 }
 
-export default defineFlatConfig([
+export default defineConfig([
   {
     ignores: [
       'public',
@@ -411,10 +411,10 @@ export default defineFlatConfig([
     },
     processor: pluginVue.processors['.vue'],
     rules: {
-      ...pluginVue.configs.base.rules,
-      ...pluginVue.configs['vue3-essential'].rules,
-      ...pluginVue.configs['vue3-strongly-recommended'].rules,
-      ...pluginVue.configs['vue3-recommended'].rules,
+      ...pluginVue.configs['flat/base'].rules,
+      ...pluginVue.configs['flat/essential'].rules,
+      ...pluginVue.configs['flat/strongly-recommended'].rules,
+      ...pluginVue.configs['flat/recommended'].rules,
       'vue/no-v-html': 'off',
       'vue/multi-word-component-names': 0,
       'vue/singleline-html-element-content-newline': 'off',
@@ -425,7 +425,6 @@ export default defineFlatConfig([
       'vue/v-on-event-hyphenation': ['warn', 'always', {
         autofix: true
       }],
-      'vue/script-setup-uses-vars': 'error',
       'vue/html-self-closing': ['error', {
         html: {
           void: 'never',
