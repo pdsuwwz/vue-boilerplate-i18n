@@ -9,30 +9,20 @@
   </ElConfigProvider>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 import { changeLocale, useLocale } from '@/locales/useLocale'
 
-export default defineComponent({
-  name: 'App',
-  setup () {
-    const route = useRoute()
+const route = useRoute()
 
-    const { currentElementLang } = useLocale()
+const { currentElementLang } = useLocale()
+watch(
+  () => route.params,
+  () => {
+    if (route.name === '404') return
 
-    watch(
-      () => route.params,
-      () => {
-        if (route.name === '404') return
-
-        changeLocale(route.params.locale)
-      }
-    )
-
-    return {
-      currentElementLang
-    }
+    changeLocale(route.params.locale)
   }
-})
+)
 </script>
 
 <style lang="scss">
