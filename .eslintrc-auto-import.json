@@ -318,6 +318,8 @@
     "watchTriggerable": true,
     "watchWithFilter": true,
     "whenever": true,
-    "createRef": true
+    "createRef": true,
+    "Slot": true,
+    "Slots": true
   }
 }
