@@ -1,0 +1,1 @@
+import{d as e,_ as o,b as t,o as n}from"./index-CM9NfnhP.js";const s=e({name:"XxTest"}),a={class:"xxx-container"};function c(r,_,d,p,i,f){return n(),t("div",a)}const m=o(s,[["render",c],["__scopeId","data-v-068f2104"]]);export{m as default};
