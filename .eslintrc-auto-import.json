@@ -23,6 +23,8 @@
     "RouteParams": true,
     "RouteRecordName": true,
     "RouteRecordRaw": true,
+    "Slot": true,
+    "Slots": true,
     "VNode": true,
     "WritableComputedRef": true,
     "_": true,
@@ -40,6 +42,7 @@
     "createGlobalState": true,
     "createInjectionState": true,
     "createReactiveFn": true,
+    "createRef": true,
     "createReusableTemplate": true,
     "createRouter": true,
     "createSharedComposable": true,
@@ -317,9 +320,6 @@
     "watchThrottled": true,
     "watchTriggerable": true,
     "watchWithFilter": true,
-    "whenever": true,
-    "createRef": true,
-    "Slot": true,
-    "Slots": true
+    "whenever": true
   }
 }
